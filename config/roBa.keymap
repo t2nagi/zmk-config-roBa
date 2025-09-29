@@ -73,8 +73,15 @@
         m_to_setting: m_to_setting {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             label = "M_TO_SETTING";
+        };
+
+        m_to_other_1: m_to_other_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 4>;
+            label = "M_TO_OTHER_1";
         };
     };
 
@@ -105,6 +112,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        lt_to_other_1: lt_to_other_1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_TO_OTHER_1";
+            bindings = <&m_to_other_1>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -115,7 +131,7 @@
 &kp Q      &kp W     &kp E     &kp R                           &kp T                                                    &kp Y                  &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S     &kp D     &kp F                           &kp G                      &lt 2 ESC      &kp MINUS      &kp H                  &kp J  &kp K      &kp L    &kp SEMI
 &kp Z      &kp X     &kp C     &kp V                           &lt_tl_setting 0 B         &lt 0 TAB      &kp SEMICOLON  &kp N                  &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&kp LCTRL  &kp LALT  &kp LGUI  &lt_to_function 0 INT_MUHENKAN  &lt_tl_allow 0 INT_HENKAN  &kp SPACE      &kp BACKSPACE  &mt RIGHT_SHIFT ENTER                             &mt RIGHT_SHIFT DEL
+&kp LCTRL  &kp LALT  &kp LGUI  &lt_to_function 0 INT_MUHENKAN  &lt_tl_allow 0 INT_HENKAN  &kp SPACE      &kp BACKSPACE  &mt RIGHT_SHIFT ENTER                             &lt_to_other_1 0 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -143,10 +159,19 @@
 
         allow_and_symbol {
             bindings = <
-&kp LS(EXCL)   &kp LS(DQT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                       &kp LS(AMPS)  &kp LS(SQT)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(N0)
-&trans         &trans       &trans         &trans        &trans         &trans      &kp F13  &kp F6        &kp UP       &kp DOWN      &kp F9        &kp MINUS
-&kp LS(EQUAL)  &trans       &trans         &trans        &trans         &trans      &trans   &kp LEFT      &kp DOWN     &kp RIGHT     &kp LEFT      &kp F11
-&trans         &trans       &trans         &trans        &trans         &trans      &trans   &trans                                                 &kp F12
+&kp LS(EXCL)   &kp LS(DQT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                      &kp LS(AMPS)  &kp LS(SQT)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(N0)
+&trans         &trans       &trans         &trans        &trans         &trans      &none   &none         &kp UP       &none         &none         &kp MINUS
+&kp LS(EQUAL)  &trans       &trans         &trans        &trans         &trans      &trans  &kp LEFT      &kp DOWN     &kp RIGHT     &none         &kp F11
+&trans         &trans       &trans         &trans        &trans         &trans      &trans  &trans                                                 &kp F12
+            >;
+        };
+
+        other_0 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp DEL  &trans                          &trans
             >;
         };
 
