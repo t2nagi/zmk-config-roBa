@@ -83,6 +83,20 @@
             bindings = <&to 4>;
             label = "M_TO_OTHER_1";
         };
+
+        mac_screen_cupture_3: mac_screen_cupture_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
+            label = "MAC_SCREEN_CUPTURE_3";
+        };
+
+        mac_screen_cupture_4: mac_screen_cupture_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+            label = "MAC_SCREEN_CUPTURE_4";
+        };
     };
 
     behaviors {
@@ -139,10 +153,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1      &mkp MB3    &mkp MB2       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans      &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                           &trans
+&trans  &trans  &mac_screen_cupture_3  &mac_screen_cupture_3  &trans                      &trans  &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&trans  &trans  &trans                 &trans                 &trans  &trans      &trans  &trans  &mkp MB1      &mkp MB3    &mkp MB2       &trans
+&trans  &trans  &trans                 &trans                 &trans  &trans      &trans  &trans  &trans        &trans      &trans         &trans
+&trans  &trans  &trans                 &trans                 &trans  &trans      &trans  &trans                                           &trans
             >;
         };
 
@@ -214,12 +228,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        aaa {
-            if-layers = <0>;
-            then-layer = <1>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
