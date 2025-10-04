@@ -59,28 +59,28 @@
         m_to_function: m_to_function {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 3>;
+            bindings = <&mo 3>;
             label = "M_TO_FUNCTION";
         };
 
         m_to_allow: m_to_allow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 4>;
+            bindings = <&mo 4>;
             label = "M_TO_ALLOW";
         };
 
         m_to_setting: m_to_setting {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 6>;
+            bindings = <&mo 6>;
             label = "M_TO_SETTING";
         };
 
         m_to_other_1: m_to_other_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 5>;
+            bindings = <&mo 5>;
             label = "M_TO_OTHER_1";
         };
 
@@ -101,7 +101,7 @@
         m_to_mouse_scroll: m_to_mouse_scroll {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 2>;
+            bindings = <&mo 2>;
             label = "M_TO_MOUSE_SCROLL";
         };
     };
