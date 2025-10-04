@@ -167,10 +167,10 @@
 
         default {
             bindings = <
-&kp Q                     &kp W     &kp E     &kp R                           &kp T                                                    &kp Y                  &kp U  &kp I      &kp O    &kp P
-&kp A                     &kp S     &kp D     &kp F                           &kp G                      &mkp MCLK      &kp TAB        &kp H                  &kp J  &kp K      &kp L    &lt_to_mouse_scroll 0 AT_SIGN
-&kp Z                     &kp X     &kp C     &kp V                           &kp B                      &kp TAB        &kp SEMICOLON  &lt_tl_setting 0 N     &kp M  &kp COMMA  &kp DOT  &lt_tl_setting 0 SLASH
-&double_tap LEFT_SHIFT 5  &kp LALT  &kp LGUI  &lt_to_function 0 JP_EISU  &lt_tl_allow 0 JP_KANA  &kp SPACE      &kp BACKSPACE  &mt RIGHT_SHIFT ENTER                             &lt_to_other_1 0 DEL
+&kp Q                     &kp W     &kp E     &kp R          &kp T                                        &kp Y                  &kp U  &kp I      &kp O    &kp P
+&kp A                     &kp S     &kp D     &kp F          &kp G          &mkp MCLK      &kp TAB        &kp H                  &kp J  &kp K      &kp L    &lt_to_mouse_scroll 0 AT_SIGN
+&kp Z                     &kp X     &kp C     &kp V          &kp B          &kp TAB        &kp SEMICOLON  &lt_tl_setting 0 N     &kp M  &kp COMMA  &kp DOT  &lt_tl_setting 0 SLASH
+&double_tap LEFT_SHIFT 5  &kp LALT  &kp LGUI  &lt 3 JP_EISU  &lt 4 JP_KANA  &kp SPACE      &kp BACKSPACE  &mt RIGHT_SHIFT ENTER                             &lt_to_other_1 0 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
