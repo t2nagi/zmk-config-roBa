@@ -27,15 +27,15 @@ layers:
   - X
   - C
   - V
-  - {t: B, h: '&m_to_setting'}
+  - B
   - TAB
   - ;
   - {t: N, h: '&m_to_setting'}
   - M
   - ','
   - .
-  - /
-  - LCTRL
+  - {t: /, h: '&m_to_setting'}
+  - {t: options, h: LEFT SHIFT}
   - LALT
   - LGUI
   - {t: INT MUHENKAN, h: '&m_to_function'}
@@ -44,7 +44,7 @@ layers:
   - BACKSPACE
   - {t: ENTER, h: RIGHT SHIFT}
   - {t: DEL, h: '&m_to_other_1'}
-  MOUSE:
+  mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mac_screen_cupture_3'
@@ -66,6 +66,50 @@ layers:
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ESC, h: '&m_to_mouse_scroll'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  mouse_scroll:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -176,7 +220,7 @@ layers:
   - BACKSPACE
   - {t: ▽, type: trans}
   - F12
-  other_0:
+  options:
   - ESC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -211,7 +255,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT CONTROL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
