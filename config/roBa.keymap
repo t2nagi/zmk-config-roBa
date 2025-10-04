@@ -120,15 +120,22 @@
         mac_screen_cupture_3: mac_screen_cupture_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
+            bindings = <&macro_tap &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
             label = "MAC_SCREEN_CUPTURE_3";
         };
 
         mac_screen_cupture_4: mac_screen_cupture_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+            bindings = <&macro_tap &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
             label = "MAC_SCREEN_CUPTURE_4";
+        };
+
+        chrome_page_back: chrome_page_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <6macro_tap &kp ALT &kp LEFT_ARROW>;
+            label = "CHROME_PAGE_BACK";
         };
 
         m_to_mouse_scroll: m_to_mouse_scroll {
