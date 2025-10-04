@@ -240,10 +240,10 @@
 
         options {
             bindings = <
-&kp ESC           &trans  &trans  &trans  &trans                      &kp MINUS         &kp CARET       &kp INT_YEN  &kp AT     &kp LBKT
-&kp TAB           &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)   &kp LBKT     &kp COLON  &kp RBKT
-&trans            &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)  &kp RBKT     &kp FSLH   &kp UNDER
-&kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                    &trans
+&kp ESC  &trans  &trans  &trans  &trans                      &kp MINUS         &kp CARET       &kp INT_YEN  &kp AT     &kp LBKT
+&kp TAB  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)   &kp LBKT     &kp COLON  &kp RBKT
+&trans   &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)  &kp RBKT     &kp FSLH   &kp UNDER
+&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                    &trans
             >;
         };
 
