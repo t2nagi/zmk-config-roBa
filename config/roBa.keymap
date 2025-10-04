@@ -41,10 +41,6 @@
     automouse-layer = <1>;
     scroll-layers = <2>;
 
-    // スクロール方向を反転
-    invert-scroll-x;  // 水平スクロールを反転
-    invert-scroll-y;  // 垂直スクロールを反転
-
     // arrows {
     //     layers = <3>;
     //     bindings =
