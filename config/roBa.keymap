@@ -62,6 +62,16 @@
             bindings = <&to 0>;
             key-positions = <27 28>;
         };
+
+        kp_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <38 40>;
+        };
+
+        kp_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <41 38>;
+        };
     };
 
     macros {
@@ -214,19 +224,19 @@
 
         function_and_number {
             bindings = <
-&kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5                            &kp N6         &kp N7  &kp N8  &kp N9  &kp N0
-&kp F1        &kp F2  &kp F3  &kp F4  &kp F5   &trans       &kp TAB     &kp KP_DOT     &kp N4  &kp N5  &kp N6  &kp MINUS
-&kp F6        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11      &kp F12     &kp N0         &kp N1  &kp N2  &kp N3  &kp CARET
-&trans        &trans  &trans  &trans  &trans   &trans       &kp DELETE  &kp BACKSPACE                          &kp RIGHT_SHIFT
+&kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5                         &kp N6      &kp N7  &kp N8  &kp N9  &kp N0
+&kp F1        &kp F2  &kp F3  &kp F4  &kp F5   &trans       &kp TAB  &kp KP_DOT  &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp F6        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11      &kp F12  &kp N0      &kp N1  &kp N2  &kp N3  &kp CARET
+&trans        &trans  &trans  &trans  &trans   &trans       &trans   &trans                              &kp RIGHT_SHIFT
             >;
         };
 
         allow_and_option {
             bindings = <
-&kp ESC    &trans     &trans     &trans     &trans                          &trans         &trans    &trans    &trans     &trans
-&trans     &trans     &trans     &trans     &trans  &trans      &trans      &kp PG_UP      &kp HOME  &kp UP    &kp END    &trans
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans      &trans      &kp PG_DN      &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans     &trans     &trans     &trans     &trans  &trans      &kp DELETE  &kp BACKSPACE                                 &trans
+&kp ESC    &trans     &trans     &trans     &trans                      &trans     &trans    &trans    &trans     &trans
+&trans     &trans     &trans     &trans     &trans  &trans      &trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &trans
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans      &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans     &trans     &trans     &trans     &trans  &trans      &trans  &trans                                    &trans
             >;
         };
 
