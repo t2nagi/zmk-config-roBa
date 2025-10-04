@@ -121,7 +121,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap　&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
+                <&macro_tap &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
 
             label = "MAC_SCREEN_CUPTURE_3";
         };
@@ -130,7 +130,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap　&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+                <&macro_tap &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
 
             label = "MAC_SCREEN_CUPTURE_4";
         };
@@ -138,7 +138,7 @@
         chrome_page_back: chrome_page_back {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap　&kp LEFT_COMMAND &kp LEFT_ARROW>;
+            bindings = <&macro_tap &kp LEFT_COMMAND &kp LEFT_ARROW>;
 
             label = "CHROME_PAGE_BACK";
         };
