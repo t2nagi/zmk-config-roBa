@@ -134,7 +134,7 @@
         chrome_page_back: chrome_page_back {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <6macro_tap &kp ALT &kp LEFT_ARROW>;
+            bindings = <&macro_tap &kp ALT &kp LEFT_ARROW>;
             label = "CHROME_PAGE_BACK";
         };
 
