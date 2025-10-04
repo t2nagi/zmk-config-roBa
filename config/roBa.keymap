@@ -2,6 +2,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_ZKHK  GRAVE        // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
 #define JP_MINUS MINUS        // -
 #define JP_CARET EQUAL        // ^
@@ -208,10 +209,10 @@
 
         default {
             bindings = <
-&kp Q           &kp W     &kp E     &kp R             &kp T                                             &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S     &kp D     &kp F             &kp G             &mkp MCLK        &kp TAB        &kp H      &kp J  &kp K      &kp L    &lt 2 SEMICOLON
-&kp Z           &kp X     &kp C     &kp V             &kp B             &trans           &kp SEMICOLON  &kp N      &kp M  &kp COMMA  &kp DOT  &lt 6 SLASH
-&kp LEFT_SHIFT  &kp LALT  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 LANGUAGE_1  &lt 5 SPACE      &kp SPACE      &kp ENTER                             &kp MINUS
+&kp Q           &kp W     &kp E     &kp R             &kp T                                           &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S     &kp D     &kp F             &kp G             &mkp MCLK      &kp TAB        &kp H      &kp J  &kp K      &kp L    &lt 2 SEMICOLON
+&kp Z           &kp X     &kp C     &kp V             &kp B             &trans         &kp SEMICOLON  &kp N      &kp M  &kp COMMA  &kp DOT  &lt 6 SLASH
+&kp LEFT_SHIFT  &kp LALT  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 LANGUAGE_1  &lt 5 TAB      &kp SPACE      &kp ENTER                             &kp MINUS
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -246,19 +247,19 @@
 
         allow_and_option {
             bindings = <
-&kp ESC    &trans     &trans     &trans     &trans                       &trans     &trans    &trans    &trans     &trans
-&trans     &trans     &trans     &trans     &trans  &trans      &trans   &kp PG_UP  &kp LEFT  &kp UP    &kp RIGHT  &trans
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans      &trans   &kp PG_DN  &kp HOME  &kp DOWN  &kp END    &trans
-&trans     &trans     &trans     &trans     &trans  &trans      &kp DEL  &kp BSPC                                  &trans
+&kp ESC    &trans     &mac_screen_cupture_3  &mac_screen_cupture_4  &trans                       &trans     &trans    &trans    &trans     &trans
+&trans     &trans     &trans                 &trans                 &trans  &trans      &trans   &kp PG_UP  &kp LEFT  &kp UP    &kp RIGHT  &trans
+&kp LC(Z)  &kp LC(X)  &kp LC(C)              &kp LC(V)              &trans  &trans      &trans   &kp PG_DN  &kp HOME  &kp DOWN  &kp END    &trans
+&trans     &trans     &trans                 &trans                 &trans  &trans      &kp DEL  &kp BSPC                                  &trans
             >;
         };
 
         options {
             bindings = <
-&kp ESC  &trans  &trans  &trans  &trans                      &kp JP_AT         &kp JP_BSLH    &kp JP_MINUS  &kp JP_CARET     &kp JP_YEN
-&kp TAB  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)   &kp JP_LBKT     &kp JP_SEMI  &kp JP_COLON
-&trans   &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)  &kp JP_RBKT     &kp JP_SLASH   &kp JP_UNDER
-&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                    &trans
+&kp ESC  &trans  &trans  &trans  &trans                      &kp JP_AT         &kp JP_BSLH     &kp JP_MINUS  &kp JP_CARET  &kp JP_YEN
+&kp TAB  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)   &kp JP_LBKT   &kp JP_SEMI   &kp JP_COLON
+&trans   &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)  &kp JP_RBKT   &kp JP_SLASH  &kp JP_UNDER
+&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                        &trans
             >;
         };
 
