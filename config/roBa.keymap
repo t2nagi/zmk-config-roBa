@@ -281,7 +281,7 @@
 &kp ESC         &trans  &trans  &trans  &trans                      &kp JP_AT         &kp JP_BSLH     &kp JP_MINUS  &kp JP_CARET  &kp JP_YEN
 &kp TAB         &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)   &kp JP_LBKT   &kp JP_SEMI   &kp JP_COLON
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)  &kp JP_RBKT   &kp JP_SLASH  &kp JP_MINUS
-&trans          &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT_SHIFT                                                &JP_UNDER
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT_SHIFT                                                &kp JP_UNDER
             >;
         };
 
