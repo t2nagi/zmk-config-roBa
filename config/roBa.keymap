@@ -120,21 +120,28 @@
         mac_screen_cupture_3: mac_screen_cupture_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
+
             label = "MAC_SCREEN_CUPTURE_3";
         };
 
         mac_screen_cupture_4: mac_screen_cupture_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+
             label = "MAC_SCREEN_CUPTURE_4";
         };
 
         chrome_page_back: chrome_page_back {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp ALT &kp LEFT_ARROW>;
+            bindings = <&macro_tap>, <&kp LEFT_COMMAND &kp LEFT_ARROW>;
+
             label = "CHROME_PAGE_BACK";
         };
 
@@ -227,28 +234,28 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1      &mkp MB3    &mkp MB2       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans      &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                           &trans
+&trans  &trans  &trans  &trans  &trans                      &trans             &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &chrome_page_back  &mkp MB1      &mkp MB3    &mkp MB2       &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &trans        &trans      &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                      &trans
             >;
         };
 
         mouse_scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans            &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans            &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                       &trans
+&trans  &trans  &trans  &trans  &trans                      &trans             &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &chrome_page_back  &mkp MB1      &mkp MB3          &mkp MB2             &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &trans        &trans            &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                  &trans
             >;
         };
 
         function_and_number {
             bindings = <
-&kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5                         &kp N6         &kp N7  &kp N8  &kp N9  &kp N0
-&kp F1        &kp F2  &kp F3  &kp F4  &kp F5   &trans       &kp TAB  &kp KP_DOT     &kp N4  &kp N5  &kp N6  &kp MINUS
-&kp F6        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11      &kp F12  &kp LS(MINUS)  &kp N1  &kp N2  &kp N3  &kp NUMBER_0
-&trans        &trans  &trans  &trans  &trans   &trans       &trans   &trans                                 &kp RIGHT_SHIFT
+&kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5                         &kp N6          &kp N7  &kp N8  &kp N9  &kp N0
+&kp F1        &kp F2  &kp F3  &kp F4  &kp F5   &trans       &kp TAB  &kp KP_DOT      &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp F6        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11      &kp F12  &kp LS(MINUS)   &kp N1  &kp N2  &kp N3  &kp NUMBER_0
+&trans        &trans  &trans  &trans  &trans   &trans       &trans   &kp LEFT_SHIFT                          &kp RIGHT_SHIFT
             >;
         };
 
