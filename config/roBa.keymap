@@ -53,7 +53,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        to_default_layer {
+            bindings = <&to 0>;
+            key-positions = <27 28>;
+        };
+    };
 
     macros {
         m_to_function: m_to_function {
@@ -170,7 +177,7 @@
 &kp Q                     &kp W     &kp E     &kp R             &kp T                                           &kp Y                  &kp U  &kp I      &kp O    &kp P
 &kp A                     &kp S     &kp D     &kp F             &kp G             &mkp MCLK      &kp TAB        &kp H                  &kp J  &kp K      &kp L    &lt 2 AT_SIGN
 &kp Z                     &kp X     &kp C     &kp V             &kp B             &kp TAB        &kp SEMICOLON  &lt_tl_setting 0 N     &kp M  &kp COMMA  &kp DOT  &lt 6 SLASH
-&double_tap LEFT_SHIFT 5  &kp LALT  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 LANGUAGE_1  &kp SPACE      &kp BACKSPACE  &mt RIGHT_SHIFT ENTER                             &lt_to_other_1 0 DEL
+&double_tap LEFT_SHIFT 5  &kp LALT  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 LANGUAGE_1  &kp SPACE      &kp BACKSPACE  &mt RIGHT_SHIFT ENTER                             &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
