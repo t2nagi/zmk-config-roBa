@@ -120,14 +120,14 @@
         mac_screen_cupture_3: mac_screen_cupture_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
+            bindings = <&macro_press &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
             label = "MAC_SCREEN_CUPTURE_3";
         };
 
         mac_screen_cupture_4: mac_screen_cupture_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
             label = "MAC_SCREEN_CUPTURE_4";
         };
 
