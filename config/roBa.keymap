@@ -255,9 +255,9 @@
 
         options {
             bindings = <
-&kp ESC  &trans  &trans  &trans  &trans                      &kp MINUS         &kp JP_CARET    &kp INT_YEN  &kp JP_AT     &kp JP_LBKT
-&kp TAB  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)   &kp JP_LBKT     &kp COLON  &kp JP_RBKT
-&trans   &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)  &kp JP_RBKT     &kp FSLH   &kp UNDER
+&kp ESC  &trans  &trans  &trans  &trans                      &kp JP_AT         &kp JP_BSLH    &kp JP_MINUS  &kp JP_CARET     &kp JP_YEN
+&kp TAB  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)   &kp JP_LBKT     &kp JP_SEMI  &kp JP_COLON
+&trans   &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)  &kp JP_RBKT     &kp JP_SLASH   &kp JP_UNDER
 &trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                    &trans
             >;
         };
