@@ -3,6 +3,7 @@
 #define ENCODER_MSC_DOWN_UP_SCRL_VAL 180
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_ZKHK  GRAVE        // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
 #define JP_MINUS MINUS        // -
 #define JP_CARET EQUAL        // ^
@@ -92,34 +93,6 @@
     };
 
     macros {
-        m_to_function: m_to_function {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mo 3>;
-            label = "M_TO_FUNCTION";
-        };
-
-        m_to_allow: m_to_allow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mo 4>;
-            label = "M_TO_ALLOW";
-        };
-
-        m_to_setting: m_to_setting {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mo 6>;
-            label = "M_TO_SETTING";
-        };
-
-        m_to_other_1: m_to_other_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mo 5>;
-            label = "M_TO_OTHER_1";
-        };
-
         mac_screen_cupture_3: mac_screen_cupture_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -156,11 +129,16 @@
             label = "CHROME_PAGE_BACK";
         };
 
-        m_to_mouse_scroll: m_to_mouse_scroll {
+        mac_trash: mac_trash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 2>;
-            label = "M_TO_MOUSE_SCROLL";
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND &kp DELETE>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND &kp DELETE>;
+
+            label = "MAC_TRASH";
         };
     };
 
@@ -263,9 +241,9 @@
 
         mouse_scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans             &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &chrome_page_back  &mkp MB1      &mkp MB3          &mkp MB2             &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &trans        &trans            &trans               &trans
+&trans  &trans  &trans  &trans  &trans                          &trans             &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans    &trans        &trans  &chrome_page_back  &mkp MB1      &mkp MB3          &mkp MB2             &trans
+&trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans             &trans        &trans            &trans               &trans
 &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2      &trans  &trans                                                                  &trans
             >;
         };
@@ -281,10 +259,10 @@
 
         allow_and_option {
             bindings = <
-&kp ESC    &trans     &mac_screen_cupture_3  &mac_screen_cupture_4  &trans                            &trans   &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT) &trans
-&kp TAB    &trans     &trans                 &trans                 &trans  &trans           &trans   &kp PG_UP  &kp LEFT  &kp UP    &kp RIGHT  &trans
-&kp LC(Z)  &kp LC(X)  &kp LC(C)              &kp LC(V)              &trans  &kp JP_ZKHK      &trans   &kp PG_DN  &kp HOME  &kp DOWN  &kp END    &trans
-&trans     &trans     &trans                 &trans                 &trans  &trans           &kp DEL  &kp BSPC                                  &trans
+&kp ESC  &trans  &mac_screen_cupture_3  &mac_screen_cupture_4  &trans                            &trans     &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&kp TAB  &trans  &mac_trash             &trans                 &trans  &trans           &trans   &kp PG_UP  &kp LEFT      &kp UP      &kp RIGHT      &trans
+&trans   &trans  &trans                 &trans                 &trans  &kp JP_ZKHK      &trans   &kp PG_DN  &kp HOME      &kp DOWN    &kp END        &trans
+&trans   &trans  &trans                 &trans                 &trans  &trans           &kp DEL  &kp BSPC                                            &trans
             >;
         };
 
