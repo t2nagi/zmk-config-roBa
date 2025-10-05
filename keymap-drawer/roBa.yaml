@@ -43,7 +43,7 @@ layers:
   - {t: TAB, h: options}
   - {t: LANGUAGE 1, h: LEFT SHIFT}
   - ENTER
-  - _
+  - Sft+INT1
   mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
