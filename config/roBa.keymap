@@ -18,7 +18,7 @@
 #define JP_COMMA COMMA        // ,
 #define JP_DOT   DOT          // .
 #define JP_SLASH SLASH        // /
-#define JP_BSLH  INT1         // (backslash)
+#define JP_BSLH  LA(INT3)     // \(backslash)
 #define JP_MHEN  INT5         // Muhenkan (無変換)
 #define JP_HENK  INT4         // Henkan (変換)
 #define JP_KANA  INT2         // Katakana ↔ Hiragana ↔ Rōmaji (カタカナ ↔ ひらがな ↔ ローマ字)
