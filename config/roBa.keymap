@@ -134,60 +134,15 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_COMMAND &kp DELETE>,
+                <&kp LEFT_COMMAND &kp BSPC>,
                 <&macro_release>,
-                <&kp LEFT_COMMAND &kp DELETE>;
+                <&kp LEFT_COMMAND &kp BSPC>;
 
             label = "MAC_TRASH";
         };
     };
 
     behaviors {
-        lt_to_function: lt_to_function {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_TO_FUNCTION";
-            bindings = <&m_to_function>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        lt_tl_allow: lt_tl_allow {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_TL_ALLOW";
-            bindings = <&m_to_allow>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        lt_tl_setting: lt_tl_setting {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_TL_SETTING";
-            bindings = <&m_to_setting>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <1000>;
-        };
-
-        lt_to_other_1: lt_to_other_1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_TO_OTHER_1";
-            bindings = <&m_to_other_1>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        lt_to_mouse_scroll: lt_to_mouse_scroll {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_TO_MOUSE_SCROLL";
-            bindings = <&m_to_mouse_scroll>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
         double_tap: double_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "DOUBLE_TAP";
