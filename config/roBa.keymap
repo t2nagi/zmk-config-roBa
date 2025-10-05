@@ -1,8 +1,7 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 240    // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL -240    // default: 10
 
 // OS設定を日本語キーボードのまま使用するための変換定義
-
 #define JP_ZKHK  GRAVE        // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
 #define JP_MINUS MINUS        // -
 #define JP_CARET EQUAL        // ^
@@ -232,15 +231,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-        };
-
-        // マウススクロール設定
-        scroll_up_down: scroll_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <20>;
         };
     };
 
