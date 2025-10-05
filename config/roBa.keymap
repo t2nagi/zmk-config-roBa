@@ -277,7 +277,7 @@
 
         allow_and_option {
             bindings = <
-&kp ESC    &trans     &mac_screen_cupture_3  &mac_screen_cupture_4  &trans                            &trans     &trans    &trans    &trans     &trans
+&kp ESC    &trans     &mac_screen_cupture_3  &mac_screen_cupture_4  &trans                            &trans   &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT) &trans
 &kp TAB    &trans     &trans                 &trans                 &trans  &trans           &trans   &kp PG_UP  &kp LEFT  &kp UP    &kp RIGHT  &trans
 &kp LC(Z)  &kp LC(X)  &kp LC(C)              &kp LC(V)              &trans  &kp JP_ZKHK      &trans   &kp PG_DN  &kp HOME  &kp DOWN  &kp END    &trans
 &trans     &trans     &trans                 &trans                 &trans  &trans           &kp DEL  &kp BSPC                                  &trans
