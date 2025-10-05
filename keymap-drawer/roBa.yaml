@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - '&mkp MCLK'
-  - TAB
+  - {t: ▽, type: trans}
   - H
   - J
   - K
@@ -28,22 +28,22 @@ layers:
   - C
   - V
   - B
-  - {t: ▽, type: trans}
-  - ;
+  - LALT
+  - TAB
   - N
   - M
   - ','
   - .
-  - {t: /, h: setting}
+  - {t: '-', h: setting}
   - LEFT SHIFT
-  - LALT
+  - LEFT CONTROL
   - LGUI
   - {t: LANGUAGE 2, h: function_and_number}
-  - {t: LANGUAGE 1, h: allow_and_option}
+  - {t: SPACE, h: allow_and_option}
   - {t: TAB, h: options}
-  - SPACE
+  - {t: LANGUAGE 1, h: LEFT SHIFT}
   - ENTER
-  - '-'
+  - _
   mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -62,7 +62,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&chrome_page_back'
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
@@ -83,8 +83,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -106,10 +106,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&chrome_page_back'
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -127,8 +127,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -149,26 +149,26 @@ layers:
   - F4
   - F5
   - {t: ▽, type: trans}
-  - TAB
+  - {t: ▽, type: trans}
   - KP DOT
   - '4'
   - '5'
   - '6'
   - '-'
-  - F6
+  - {t: F6, h: LEFT SHIFT}
   - F7
   - F8
   - F9
   - F10
-  - F11
-  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Sft+-
   - '1'
   - '2'
   - '3'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - {t: F11, h: LEFT SHIFT}
+  - F12
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -183,13 +183,13 @@ layers:
   - '&mac_screen_cupture_4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Ctl+LEFT
+  - Ctl+UP
+  - Ctl+RIGHT
   - {t: ▽, type: trans}
+  - TAB
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mac_trash'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -199,12 +199,12 @@ layers:
   - UP
   - RIGHT
   - {t: ▽, type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
   - {t: ▽, type: trans}
   - PG DN
   - HOME
@@ -221,18 +221,18 @@ layers:
   - BSPC
   - {t: ▽, type: trans}
   options:
-  - ESC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
-  - INT1
-  - '-'
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - Sft+5
+  - Sft+6
+  - Sft+7
+  - Alt+INT3
   - '='
   - INT3
   - TAB
-  - {t: ▽, type: trans}
+  - '@'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -241,9 +241,9 @@ layers:
   - Sft+8
   - Sft+,
   - ']'
-  - ;
+  - '['
   - ''''
-  - {t: ▽, type: trans}
+  - LEFT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -254,7 +254,7 @@ layers:
   - Sft+.
   - '#'
   - /
-  - Sft+INT1
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
