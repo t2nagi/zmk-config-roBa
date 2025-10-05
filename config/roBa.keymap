@@ -180,7 +180,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODE_ARROW_LEFT_RIGHT";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
 
             tap-ms = <20>;
         };
@@ -226,7 +226,7 @@
 &tap_and_hold LEFT_SHIFT F11  &kp F12  &trans  &trans  &trans   &trans      &trans  &trans                                 &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         allow_and_option {
