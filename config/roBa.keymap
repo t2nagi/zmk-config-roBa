@@ -194,7 +194,7 @@
 &kp Q           &kp W             &kp E     &kp R             &kp T                                                            &kp Y      &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S             &kp D     &kp F             &kp G        &mkp MCLK      &trans                               &kp H      &kp J  &kp K      &kp L    &lt 2 SEMICOLON
 &kp Z           &kp X             &kp C     &kp V             &kp B        &kp LALT       &kp TAB                              &kp N      &kp M  &kp COMMA  &kp DOT  &lt 6 MINUS
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LGUI  &lt 4 LANGUAGE_2  &lt 5 SPACE  &lt 5 TAB      &tap_and_hold LEFT_SHIFT LANGUAGE_1  &kp ENTER                             &kp JP_UNDER
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 SPACE  &lt 5 TAB      &tap_and_hold LEFT_SHIFT LANGUAGE_1  &kp ENTER                             &kp JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
@@ -243,7 +243,7 @@
         options {
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp JP_MINUS  &kp JP_CARET  &kp JP_YEN
-&kp TAB           &kp AT_SIGN       &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)     &kp JP_LBKT   &kp JP_AT   &kp JP_COLON
+&kp TAB           &kp AT_SIGN       &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)     &kp JP_LBKT   &kp JP_AT     &kp JP_COLON
 &kp LEFT_SHIFT    &trans            &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)    &kp JP_RBKT   &kp JP_SLASH  &trans
 &trans            &trans            &trans            &trans            &trans            &trans      &trans  &kp LEFT_SHIFT                                                  &trans
             >;
