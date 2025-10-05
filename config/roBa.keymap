@@ -227,6 +227,15 @@
 
             tap-ms = <20>;
         };
+
+        tap_and_hold: tap_and_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_AND_HOLD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -234,10 +243,10 @@
 
         default {
             bindings = <
-&kp Q           &kp W     &kp E     &kp R             &kp T                                              &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S     &kp D     &kp F             &kp G             &mkp MCLK             &trans     &kp H      &kp J  &kp K      &kp L    &lt 2 SEMICOLON
-&kp Z           &kp X     &kp C     &kp V             &kp B             &kp LEFT_CONTROL      &kp TAB    &kp N      &kp M  &kp COMMA  &kp DOT  &lt 6 MINUS
-&kp LEFT_SHIFT  &kp LALT  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 LANGUAGE_1  &lt 5 TAB             &kp SPACE  &kp ENTER                             &kp JP_UNDER
+&kp Q                       &kp W     &kp E     &kp R             &kp T                                              &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A                       &kp S     &kp D     &kp F             &kp G             &mkp MCLK             &trans     &kp H      &kp J  &kp K      &kp L    &lt 2 SEMICOLON
+&tap_and_hold LEFT_SHIFT Z  &kp X     &kp C     &kp V             &kp B             &kp LEFT_CONTROL      &kp TAB    &kp N      &kp M  &kp COMMA  &kp DOT  &lt 6 MINUS
+&kp LEFT_SHIFT              &kp LALT  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 LANGUAGE_1  &lt 5 TAB             &kp SPACE  &kp ENTER                             &kp JP_UNDER
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -263,10 +272,10 @@
 
         function_and_number {
             bindings = <
-&kp NUMBER_1  &kp N2   &kp N3  &kp N4  &kp N5                       &kp N6         &kp N7  &kp N8  &kp N9  &kp N0
-&kp F1        &kp F2   &kp F3  &kp F4  &kp F5   &trans      &trans  &kp KP_DOT     &kp N4  &kp N5  &kp N6  &kp MINUS
-&kp F6        &kp F7   &kp F8  &kp F9  &kp F10  &trans      &trans  &kp LS(MINUS)  &kp N1  &kp N2  &kp N3  &kp LEFT_SHIFT
-&kp F11       &kp F12  &trans  &trans  &trans   &trans      &trans  &trans                                 &kp RIGHT_SHIFT
+&kp NUMBER_1                  &kp N2   &kp N3  &kp N4  &kp N5                       &kp N6         &kp N7  &kp N8  &kp N9  &kp N0
+&kp F1                        &kp F2   &kp F3  &kp F4  &kp F5   &trans      &trans  &kp KP_DOT     &kp N4  &kp N5  &kp N6  &kp MINUS
+&tap_and_hold LEFT_SHIFT F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans      &trans  &kp LS(MINUS)  &kp N1  &kp N2  &kp N3  &kp LEFT_SHIFT
+&tap_and_hold LEFT_SHIFT F11  &kp F12  &trans  &trans  &trans   &trans      &trans  &trans                                 &kp RIGHT_SHIFT
             >;
         };
 
