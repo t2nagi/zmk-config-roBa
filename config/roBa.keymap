@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL -180    // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 120    // default: 10
 #define ENCODER_MSC_DOWN_UP_SCRL_VAL 180
 
 // OS設定を日本語キーボードのまま使用するための変換定義
