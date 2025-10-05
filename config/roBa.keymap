@@ -1,7 +1,6 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 120    // default: 10
 #define ENCODER_SENSOR_SCRL_VAL 180
-
 #define TAPPING_TERM_MS 500   // タップとホールドの時間制限を500msに設定
 
 // OS設定を日本語キーボードのまま使用するための変換定義
@@ -156,7 +155,7 @@
             bindings = <&kp>, <&mo>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM_MS>;
+            tapping-term-ms = <500>;
         };
 
         encode_sensor_down_up: encode_sensor_down_up {
@@ -174,7 +173,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM_MS>;
+            tapping-term-ms = <500>;
         };
     };
 
