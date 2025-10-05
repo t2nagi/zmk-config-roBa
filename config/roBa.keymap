@@ -159,15 +159,6 @@
             bindings = <&mo 2>;
             label = "M_TO_MOUSE_SCROLL";
         };
-
-        # マウススクロール設定
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <20>;
-        };
     };
 
     behaviors {
@@ -241,6 +232,15 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+        };
+
+        // マウススクロール設定
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
         };
     };
 
