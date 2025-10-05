@@ -152,7 +152,7 @@
             tapping-term-ms = <200>;
         };
 
-        ENCODER_SENSOR_down_up: ENCODER_SENSOR_down_up {
+        encode_sensor_down_up: encode_sensor_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_SENSOR_DOWN_UP";
             #sensor-binding-cells = <0>;
@@ -182,7 +182,7 @@
 &kp LEFT_SHIFT              &kp LALT  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 LANGUAGE_1  &lt 5 TAB             &kp SPACE  &kp ENTER                             &kp JP_UNDER
             >;
 
-            sensor-bindings = <&ENCODER_SENSOR_down_up>;
+            sensor-bindings = <&encode_sensor_down_up>;
         };
 
         mouse {
