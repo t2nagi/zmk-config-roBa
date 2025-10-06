@@ -234,10 +234,10 @@
 
         allow_and_option {
             bindings = <
-&kp ESC  &trans  &mac_screen_cupture_3  &mac_screen_cupture_4  &trans                            &trans     &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &kp BACKSPACE
-&kp TAB  &trans  &mac_trash             &trans                 &trans  &trans           &trans   &kp PG_UP  &kp LEFT      &kp UP      &kp RIGHT      &kp ENTER
-&trans   &trans  &trans                 &trans                 &trans  &kp JP_ZKHK      &trans   &kp PG_DN  &kp HOME      &kp DOWN    &kp END        &trans
-&trans   &trans  &trans                 &trans                 &trans  &trans           &kp DEL  &kp BSPC                                            &trans
+&kp ESC         &trans  &mac_screen_cupture_3  &mac_screen_cupture_4  &trans                            &trans     &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &kp BACKSPACE
+&kp TAB         &trans  &mac_trash             &trans                 &trans  &trans           &trans   &kp PG_UP  &kp LEFT      &kp UP      &kp RIGHT      &kp ENTER
+&kp LEFT_SHIFT  &trans  &trans                 &trans                 &trans  &kp JP_ZKHK      &trans   &kp PG_DN  &kp HOME      &kp DOWN    &kp END        &trans
+&trans          &trans  &trans                 &trans                 &trans  &trans           &kp DEL  &kp BSPC                                            &trans
             >;
 
             sensor-bindings = <&encode_arrow_left_right>;
