@@ -1,7 +1,6 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 120    // default: 10
 #define ENCODER_SENSOR_SCRL_VAL 180
-#define TAPPING_TERM_MS 500   // タップとホールドの時間制限を500msに設定
 
 // OS設定を日本語キーボードのまま使用するための変換定義
 
@@ -61,12 +60,6 @@
 #define ENCODER_SENSOR_UP MOVE_Y(ENCODER_SENSOR_SCRL_VAL)
 #define ENCODER_SENSOR_DOWN MOVE_Y(-ENCODER_SENSOR_SCRL_VAL)
 
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
-    tapping-term-ms = <TAPPING_TERM_MS>;
-};
-
 &trackball {
     automouse-layer = <1>;
     scroll-layers = <2>;
@@ -82,6 +75,17 @@
     //     wait-ms = <5>;
     //     tap-ms = <5>;
     // };
+};
+
+&mt {
+    flavor = "balanced";
+    tapping-term-ms = <500>;
+};
+
+&lt {
+    timeout-ms = <500>;
+    quick-tap-ms = <0>;
+    tapping-term-ms = <500>;
 };
 
 &msc {
