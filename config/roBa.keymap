@@ -82,9 +82,7 @@
     tapping-term-ms = <500>;
 };
 
-&lt {
-    tapping-term-ms = <500>;
-};
+&lt { tapping-term-ms = <500>; };
 
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
@@ -196,10 +194,10 @@
 
         default {
             bindings = <
-&kp Q           &kp W             &kp E     &kp R             &kp T                                                            &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S             &kp D     &kp F             &kp G        &mkp MCLK      &trans                               &kp H        &kp J  &kp K      &kp L    &lt 2 SEMICOLON
-&kp Z           &kp X             &kp C     &kp V             &kp B        &kp LALT       &kp TAB                              &kp N        &kp M  &kp COMMA  &kp DOT  &lt 6 MINUS
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 SPACE  &lt 5 TAB      &tap_and_hold LEFT_SHIFT LANGUAGE_1  &lt 4 SPACE                             &kp JP_UNDER
+&kp Q                       &kp W             &kp E     &kp R             &kp T                                                            &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A                       &kp S             &kp D     &kp F             &kp G        &mkp MCLK             &trans                        &kp H        &kp J  &kp K      &kp L    &lt 2 SEMICOLON
+&tap_and_hold LEFT_SHIFT Z  &kp X             &kp C     &kp V             &kp B        &kp LALT              &trans                        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 6 MINUS
+&kp LEFT_SHIFT              &kp LEFT_CONTROL  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 SPACE  &lt 5 LEFT_SHIFT      &tap_and_hold LEFT_SHIFT TAB  &lt 4 SPACE                             &kp JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
@@ -236,10 +234,10 @@
 
         allow_and_option {
             bindings = <
-&kp ESC         &trans  &mac_screen_cupture_3  &mac_screen_cupture_4  &trans                            &trans     &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &kp BACKSPACE
-&kp TAB         &trans  &mac_trash             &trans                 &trans  &trans           &trans   &kp PG_UP  &kp LEFT      &kp UP      &kp RIGHT      &kp ENTER
-&kp LEFT_SHIFT  &trans  &trans                 &trans                 &trans  &kp JP_ZKHK      &trans   &kp PG_DN  &kp HOME      &kp DOWN    &kp END        &kp RIGHT_SHIFT
-&trans          &trans  &trans                 &trans                 &trans  &trans           &kp DEL  &kp BSPC                                            &trans
+&kp ESC         &trans  &mac_screen_cupture_3  &mac_screen_cupture_4  &trans                                    &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
+&kp TAB         &trans  &mac_trash             &trans                 &trans          &trans           &trans   &kp PG_UP         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
+&kp LEFT_SHIFT  &trans  &trans                 &trans                 &trans          &kp JP_ZKHK      &trans   &kp PG_DN         &kp HOME      &kp DOWN        &kp END        &kp RIGHT_SHIFT
+&trans          &trans  &trans                 &kp LANGUAGE_2         &kp LANGUAGE_1  &trans           &kp DEL  &kp BSPC                                                       &kp DELETE
             >;
 
             sensor-bindings = <&encode_arrow_left_right>;
@@ -248,9 +246,9 @@
         options {
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp JP_BSLH  &kp JP_CARET  &kp JP_YEN
-&kp TAB           &kp AT_SIGN       &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)     &kp JP_LBKT  &kp JP_AT     &kp JP_COLON
-&kp LEFT_SHIFT    &trans            &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)    &kp JP_RBKT  &kp JP_SLASH  &trans
-&trans            &trans            &trans            &trans            &trans            &trans      &trans  &kp LEFT_SHIFT                                                 &trans
+&trans            &kp AT_SIGN       &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)     &kp JP_LBKT  &kp JP_AT     &kp JP_COLON
+&trans            &trans            &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)    &kp JP_RBKT  &kp JP_SLASH  &trans
+&trans            &trans            &trans            &trans            &trans            &trans      &trans  &trans                                                         &trans
             >;
         };
 
