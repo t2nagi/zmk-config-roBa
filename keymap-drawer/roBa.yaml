@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: allow_and_option}
   - {t: TAB, h: options}
   - {t: LANGUAGE 1, h: LEFT SHIFT}
-  - ENTER
+  - {t: SPACE, h: allow_and_option}
   - Sft+INT1
   mouse:
   - {t: ▽, type: trans}
@@ -186,7 +186,7 @@ layers:
   - Ctl+LEFT
   - Ctl+UP
   - Ctl+RIGHT
-  - {t: ▽, type: trans}
+  - BACKSPACE
   - TAB
   - {t: ▽, type: trans}
   - '&mac_trash'
@@ -198,8 +198,8 @@ layers:
   - LEFT
   - UP
   - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ENTER
+  - LEFT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -210,7 +210,7 @@ layers:
   - HOME
   - DOWN
   - END
-  - {t: ▽, type: trans}
+  - RIGHT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
