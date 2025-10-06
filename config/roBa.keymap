@@ -83,8 +83,6 @@
 };
 
 &lt {
-    timeout-ms = <500>;
-    quick-tap-ms = <0>;
     tapping-term-ms = <500>;
 };
 
