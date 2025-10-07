@@ -212,19 +212,19 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans             &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans    &trans        &trans  &chrome_page_back  &mkp MB1      &mkp MB3    &mkp MB2       &trans
-&trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans             &trans        &trans      &trans         &trans
-&trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2      &trans  &trans                                                      &trans
+&kp ESCAPE      &trans  &trans  &trans  &trans                        &trans             &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&kp TAB         &trans  &trans  &trans  &trans    &trans      &trans  &chrome_page_back  &mkp MB1      &mkp MB3    &mkp MB2       &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans    &trans      &trans  &trans             &trans        &trans      &trans         &trans
+&trans          &trans  &trans  &trans  &mkp MB1  &trans      &trans  &mkp MB1                                                    &trans
             >;
         };
 
         mouse_scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans             &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans    &trans        &trans  &chrome_page_back  &mkp MB1      &mkp MB3          &mkp MB2             &trans
-&trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans             &trans        &trans            &trans               &trans
-&trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2      &trans  &trans                                                                  &trans
+&trans  &trans  &trans  &trans  &trans                        &trans             &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans    &trans      &trans  &chrome_page_back  &mkp MB1      &mkp MB3          &mkp MB2             &trans
+&trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans             &trans        &trans            &trans               &trans
+&trans  &trans  &trans  &trans  &mkp MB1  &trans      &trans  &mkp MB1                                                                &trans
             >;
         };
 
@@ -253,8 +253,8 @@
         options {
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp JP_BSLH  &kp JP_CARET  &kp JP_YEN
-&trans            &kp AT_SIGN       &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)     &kp JP_LBKT  &kp JP_AT     &kp JP_COLON
-&trans            &trans            &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)    &kp JP_RBKT  &kp JP_SLASH  &trans
+&kp TAB           &kp AT_SIGN       &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)     &kp JP_LBKT  &kp JP_AT     &kp JP_COLON
+&kp LEFT_SHIFT    &trans            &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)    &kp JP_RBKT  &kp JP_SLASH  &trans
 &trans            &trans            &trans            &trans            &trans            &trans      &trans  &trans                                                         &trans
             >;
         };
