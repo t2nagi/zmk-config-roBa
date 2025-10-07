@@ -2,6 +2,8 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 120    // default: 10
 #define ENCODER_SENSOR_SCRL_VAL 180
 
+#define TAPPING_TERM_MS = <150>;
+
 // OS設定を日本語キーボードのまま使用するための変換定義
 
 #define JP_ZKHK  GRAVE        // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
@@ -79,10 +81,10 @@
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <150>;
+    tapping-term-ms = TAPPING_TERM_MS;
 };
 
-&lt { tapping-term-ms = <150>; };
+&lt { tapping-term-ms = TAPPING_TERM_MS; };
 
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
@@ -152,14 +154,6 @@
     };
 
     behaviors {
-        double_tap: double_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "DOUBLE_TAP";
-            bindings = <&kp>, <&mo>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <500>;
-        };
 
         encode_sensor_down_up: encode_sensor_down_up {
             compatible = "zmk,behavior-sensor-rotate";
@@ -170,15 +164,6 @@
             tap-ms = <20>;
         };
 
-        tap_and_hold: tap_and_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_AND_HOLD";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-        };
-
         encode_arrow_left_right: encode_arrow_left_right {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODE_ARROW_LEFT_RIGHT";
@@ -187,6 +172,17 @@
 
             tap-ms = <20>;
         };
+
+        tap_and_hold: tap_and_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_AND_HOLD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = TAPPING_TERM_MS;
+        };
+
+
 
         td_left_func1: td_left_func1 {
             compatible = "zmk,behavior-tap-dance";
