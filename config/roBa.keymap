@@ -2,8 +2,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 120    // default: 10
 #define ENCODER_SENSOR_SCRL_VAL 180
 
-#define TAPPING_TERM_MS = 150;
-
 // OS設定を日本語キーボードのまま使用するための変換定義
 
 #define JP_ZKHK  GRAVE        // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
@@ -81,10 +79,10 @@
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <TAPPING_TERM_MS>;
+    tapping-term-ms = <150>;
 };
 
-&lt { tapping-term-ms = <TAPPING_TERM_MS>; };
+&lt { tapping-term-ms = <150>; };
 
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
@@ -179,7 +177,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM_MS>;
+            tapping-term-ms = <150>;
         };
 
 
