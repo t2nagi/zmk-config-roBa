@@ -79,10 +79,10 @@
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <250>;
+    tapping-term-ms = <150>;
 };
 
-&lt { tapping-term-ms = <250>; };
+&lt { tapping-term-ms = <150>; };
 
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
@@ -208,10 +208,10 @@
 
         default {
             bindings = <
-&kp Q                       &kp W             &kp E     &kp R           &kp T                                                               &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A                       &kp S             &kp D     &kp F           &kp G           &mkp MCLK             &trans                        &kp H        &kp J  &kp K      &kp L    &lt 2 SEMICOLON
-&tap_and_hold LEFT_SHIFT Z  &kp X             &kp C     &kp V           &kp B           &kp LALT              &trans                        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 6 MINUS
-&kp LEFT_SHIFT              &kp LEFT_CONTROL  &kp LGUI  &td_left_func1  &td_left_func2  &lt 5 LEFT_SHIFT      &tap_and_hold LEFT_SHIFT TAB  &lt 4 SPACE                             &kp JP_UNDER
+&kp Q           &kp W             &kp E     &kp R           &kp T                                                               &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S             &kp D     &kp F           &kp G           &mkp MCLK             &trans                        &kp H        &kp J  &kp K      &kp L    &lt 2 SEMICOLON
+&kp Z           &kp X             &kp C     &kp V           &kp B           &kp LALT              &trans                        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 6 MINUS
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LGUI  &td_left_func1  &td_left_func2  &lt 5 LEFT_SHIFT      &tap_and_hold LEFT_SHIFT TAB  &lt 4 SPACE                             &kp JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
