@@ -187,6 +187,13 @@
 
             tap-ms = <20>;
         };
+
+        dt_change_lang: dt_change_lang {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_CHANGE_LANG";
+            #binding-cells = <0>;
+            bindings = <&lt 3 LS(LANGUAGE_2)>, <&kp LANGUAGE_1>;
+        };
     };
 
     keymap {
@@ -194,10 +201,10 @@
 
         default {
             bindings = <
-&kp Q                       &kp W             &kp E     &kp R             &kp T                                                            &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A                       &kp S             &kp D     &kp F             &kp G        &mkp MCLK             &trans                        &kp H        &kp J  &kp K      &kp L    &lt 2 SEMICOLON
-&tap_and_hold LEFT_SHIFT Z  &kp X             &kp C     &kp V             &kp B        &kp LALT              &trans                        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 6 MINUS
-&kp LEFT_SHIFT              &kp LEFT_CONTROL  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 SPACE  &lt 5 LEFT_SHIFT      &tap_and_hold LEFT_SHIFT TAB  &lt 4 SPACE                             &kp JP_UNDER
+&kp Q                       &kp W             &kp E     &kp R            &kp T                                                            &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A                       &kp S             &kp D     &kp F            &kp G        &mkp MCLK             &trans                        &kp H        &kp J  &kp K      &kp L    &lt 2 SEMICOLON
+&tap_and_hold LEFT_SHIFT Z  &kp X             &kp C     &kp V            &kp B        &kp LALT              &trans                        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 6 MINUS
+&kp LEFT_SHIFT              &kp LEFT_CONTROL  &kp LGUI  &dt_change_lang  &lt 4 SPACE  &lt 5 LEFT_SHIFT      &tap_and_hold LEFT_SHIFT TAB  &lt 4 SPACE                             &kp JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
