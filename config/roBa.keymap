@@ -199,7 +199,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LEFT_FUNC2";
             #binding-cells = <0>;
-            bindings = <&lt 1 SPACE>, <&kp LEFT_COMMAND>;
+            bindings = <&lt 4 SPACE>, <&kp LEFT_COMMAND>;
         };
     };
 
