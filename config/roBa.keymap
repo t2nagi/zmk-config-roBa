@@ -79,10 +79,10 @@
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <500>;
+    tapping-term-ms = <300>;
 };
 
-&lt { tapping-term-ms = <500>; };
+&lt { tapping-term-ms = <300>; };
 
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
