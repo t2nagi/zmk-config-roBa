@@ -186,8 +186,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LEFT_FUNC2";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 4 SPACE>, <&kp LEFT_COMMAND>;
-
+            bindings = <&lt_hold_pref 4 SPACE>;
             tapping-term-ms = <250>;
         };
 
@@ -208,7 +207,18 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
+            flavor = "hold-preferred";
+            hold-while-undecided;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
             flavor = "hold-preferred";
             hold-while-undecided;
         };
