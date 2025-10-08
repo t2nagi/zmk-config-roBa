@@ -177,7 +177,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LEFT_FUNC1";
             #binding-cells = <0>;
-            bindings = <&lt 3 LS(LANGUAGE_2)>, <&kp LANGUAGE_1>;
+            bindings = <&lt_hold_pref 3 LS(LANGUAGE_2)>, <&kp LANGUAGE_1>;
 
             tapping-term-ms = <250>;
         };
@@ -198,7 +198,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            hold-while-undecided;
+            flavor = "balanced";
+            retro-tap;
         };
     };
 
