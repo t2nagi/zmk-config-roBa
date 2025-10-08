@@ -197,9 +197,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            retro-tap;
+            tapping-term-ms = <0>;
+            flavor = "hold-preferred";
         };
     };
 
