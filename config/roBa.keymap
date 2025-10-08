@@ -253,7 +253,7 @@
 &mt LEFT_SHIFT F11  &kp F12  &trans  &trans  &trans   &trans      &trans  &trans                                 &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         allow_and_option {
