@@ -79,11 +79,11 @@
 
 &mt {
     flavor = "hold-preferred";
-    tapping-term-ms = <250>;
+    tapping-term-ms = <500>;
 };
 
 &lt {
-    tapping-term-ms = <250>;
+    tapping-term-ms = <500>;
     flavor = "hold-preferred";
 };
 
