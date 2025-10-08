@@ -78,11 +78,14 @@
 };
 
 &mt {
-    flavor = "balanced";
+    flavor = "hold-preferred";
     tapping-term-ms = <500>;
 };
 
-&lt { tapping-term-ms = <500>; };
+&lt {
+    tapping-term-ms = <500>;
+    flavor = "hold-preferred";
+};
 
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
@@ -152,15 +155,6 @@
     };
 
     behaviors {
-        double_tap: double_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "DOUBLE_TAP";
-            bindings = <&kp>, <&mo>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <500>;
-        };
-
         encode_sensor_down_up: encode_sensor_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_SENSOR_DOWN_UP";
@@ -168,15 +162,6 @@
             bindings = <&msc ENCODER_SENSOR_UP>, <&msc ENCODER_SENSOR_DOWN>;
 
             tap-ms = <20>;
-        };
-
-        tap_and_hold: tap_and_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_AND_HOLD";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <500>;
         };
 
         encode_arrow_left_right: encode_arrow_left_right {
@@ -187,6 +172,45 @@
 
             tap-ms = <20>;
         };
+
+        td_left_func1: td_left_func1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LEFT_FUNC1";
+            #binding-cells = <0>;
+            bindings = <&lt_hold_pref 3 LS(LANGUAGE_2)>, <&kp LANGUAGE_1>;
+
+            tapping-term-ms = <250>;
+        };
+
+        td_left_func2: td_left_func2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LEFT_FUNC2";
+            #binding-cells = <0>;
+            bindings = <&lt_hold_pref 4 SPACE>;
+            tapping-term-ms = <250>;
+        };
+
+        lt_hold_pref: lt_hold_pref {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_HOLD_PREF";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            hold-while-undecided;
+        };
+
+        mt_hold_pref: mt_hold_pref {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HOLD_PREF";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            hold-while-undecided;
+        };
     };
 
     keymap {
@@ -194,10 +218,10 @@
 
         default {
             bindings = <
-&kp Q                       &kp W             &kp E     &kp R             &kp T                                                            &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A                       &kp S             &kp D     &kp F             &kp G        &mkp MCLK             &trans                        &kp H        &kp J  &kp K      &kp L    &lt 2 SEMICOLON
-&tap_and_hold LEFT_SHIFT Z  &kp X             &kp C     &kp V             &kp B        &kp LALT              &trans                        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 6 MINUS
-&kp LEFT_SHIFT              &kp LEFT_CONTROL  &kp LGUI  &lt 3 LANGUAGE_2  &lt 4 SPACE  &lt 5 LEFT_SHIFT      &tap_and_hold LEFT_SHIFT TAB  &lt 4 SPACE                             &kp JP_UNDER
+&kp Q                       &kp W             &kp E     &kp R           &kp T                                                                         &kp Y                           &kp U  &kp I      &kp O    &kp P
+&kp A                       &kp S             &kp D     &kp F           &kp G           &mkp MCLK                       &kp BACKSPACE                 &kp H                           &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
+&mt_hold_pref LEFT_SHIFT Z  &kp X             &kp C     &kp V           &kp B           &kp LALT                        &kp ESCAPE                    &kp N                           &kp M  &kp COMMA  &kp DOT  &lt_hold_pref 6 MINUS
+&kp LEFT_SHIFT              &kp LEFT_CONTROL  &kp LGUI  &td_left_func1  &td_left_func2  &lt_hold_pref 5 LEFT_SHIFT      &mt_hold_pref LEFT_SHIFT TAB  &mt_hold_pref LEFT_SHIFT SPACE                             &kp JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
@@ -205,28 +229,28 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans             &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans    &trans        &trans  &chrome_page_back  &mkp MB1      &mkp MB3    &mkp MB2       &trans
-&trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans             &trans        &trans      &trans         &trans
-&trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2      &trans  &trans                                                      &trans
+&kp ESCAPE      &trans  &trans  &trans  &trans                        &trans             &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&kp TAB         &trans  &trans  &trans  &trans    &trans      &trans  &chrome_page_back  &mkp MB1      &mkp MB3    &mkp MB2       &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans    &trans      &trans  &trans             &trans        &trans      &trans         &trans
+&trans          &trans  &trans  &trans  &mkp MB1  &trans      &trans  &mkp MB1                                                    &trans
             >;
         };
 
         mouse_scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans             &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans    &trans        &trans  &chrome_page_back  &mkp MB1      &mkp MB3          &mkp MB2             &trans
-&trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans             &trans        &trans            &trans               &trans
-&trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2      &trans  &trans                                                                  &trans
+&trans  &trans  &trans  &trans  &trans                        &trans             &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans    &trans      &trans  &chrome_page_back  &mkp MB1      &mkp MB3          &mkp MB2             &trans
+&trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans             &trans        &trans            &trans               &trans
+&trans  &trans  &trans  &trans  &mkp MB1  &trans      &trans  &mkp MB1                                                                &trans
             >;
         };
 
         function_and_number {
             bindings = <
-&kp NUMBER_1                  &kp N2   &kp N3  &kp N4  &kp N5                       &kp N6         &kp N7  &kp N8  &kp N9  &kp N0
-&kp F1                        &kp F2   &kp F3  &kp F4  &kp F5   &trans      &trans  &kp KP_DOT     &kp N4  &kp N5  &kp N6  &kp MINUS
-&tap_and_hold LEFT_SHIFT F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans      &trans  &kp LS(MINUS)  &kp N1  &kp N2  &kp N3  &kp LEFT_SHIFT
-&tap_and_hold LEFT_SHIFT F11  &kp F12  &trans  &trans  &trans   &trans      &trans  &trans                                 &kp RIGHT_SHIFT
+&kp NUMBER_1        &kp N2   &kp N3  &kp N4  &kp N5                       &kp N6         &kp N7  &kp N8  &kp N9  &kp N0
+&kp F1              &kp F2   &kp F3  &kp F4  &kp F5   &trans      &trans  &kp KP_DOT     &kp N4  &kp N5  &kp N6  &kp MINUS
+&mt LEFT_SHIFT F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans      &trans  &kp LS(MINUS)  &kp N1  &kp N2  &kp N3  &kp LEFT_SHIFT
+&mt LEFT_SHIFT F11  &kp F12  &trans  &trans  &trans   &trans      &trans  &trans                                 &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
@@ -246,8 +270,8 @@
         options {
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp JP_BSLH  &kp JP_CARET  &kp JP_YEN
-&trans            &kp AT_SIGN       &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)     &kp JP_LBKT  &kp JP_AT     &kp JP_COLON
-&trans            &trans            &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)    &kp JP_RBKT  &kp JP_SLASH  &trans
+&kp TAB           &kp AT_SIGN       &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)     &kp JP_LBKT  &kp JP_AT     &kp JP_COLON
+&kp LEFT_SHIFT    &trans            &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)    &kp JP_RBKT  &kp JP_SLASH  &trans
 &trans            &trans            &trans            &trans            &trans            &trans      &trans  &trans                                                         &trans
             >;
         };

@@ -17,19 +17,19 @@ layers:
   - F
   - G
   - '&mkp MCLK'
-  - {t: ▽, type: trans}
+  - BACKSPACE
   - H
   - J
   - K
   - L
   - {t: ;, h: mouse_scroll}
-  - Z
+  - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
   - B
   - LALT
-  - TAB
+  - ESCAPE
   - N
   - M
   - ','
@@ -38,14 +38,14 @@ layers:
   - LEFT SHIFT
   - LEFT CONTROL
   - LGUI
-  - {t: LANGUAGE 2, h: function_and_number}
-  - {t: SPACE, h: allow_and_option}
-  - {t: TAB, h: options}
-  - {t: LANGUAGE 1, h: LEFT SHIFT}
-  - {t: SPACE, h: allow_and_option}
+  - '&td_left_func1'
+  - '&td_left_func2'
+  - {t: LEFT SHIFT, h: options}
+  - {t: TAB, h: LEFT SHIFT}
+  - {t: SPACE, h: LEFT SHIFT}
   - Sft+INT1
   mouse:
-  - {t: ▽, type: trans}
+  - ESCAPE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -55,7 +55,7 @@ layers:
   - Ctl+UP
   - Ctl+RIGHT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -67,7 +67,7 @@ layers:
   - '&mkp MB3'
   - '&mkp MB2'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -84,9 +84,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
-  - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&mkp MB1'
   - {t: ▽, type: trans}
   mouse_scroll:
   - {t: ▽, type: trans}
@@ -128,9 +128,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
-  - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&mkp MB1'
   - {t: ▽, type: trans}
   function_and_number:
   - '1'
@@ -170,7 +170,7 @@ layers:
   - {t: F11, h: LEFT SHIFT}
   - F12
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -182,9 +182,9 @@ layers:
   - '&mac_screen_cupture_3'
   - '&mac_screen_cupture_4'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+UP ARROW
   - Ctl+LEFT
-  - Ctl+UP
+  - UP ARROW
   - Ctl+RIGHT
   - BACKSPACE
   - TAB
@@ -196,7 +196,7 @@ layers:
   - {t: ▽, type: trans}
   - PG UP
   - LEFT
-  - UP
+  - DOWN ARROW
   - RIGHT
   - ENTER
   - LEFT SHIFT
@@ -214,12 +214,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - LANGUAGE 2
+  - LANGUAGE 1
   - {t: ▽, type: trans}
   - DEL
   - BSPC
-  - {t: ▽, type: trans}
+  - DELETE
   options:
   - Sft+1
   - Sft+2
@@ -262,7 +262,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - LEFT SHIFT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   setting:
   - {t: ▽, type: trans}
