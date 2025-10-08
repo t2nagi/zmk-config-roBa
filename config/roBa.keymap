@@ -197,7 +197,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <0>;
+            tapping-term-ms = <200>;
             flavor = "hold-preferred";
             hold-while-undecided;
         };
@@ -208,7 +208,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <0>;
+            tapping-term-ms = <200>;
             flavor = "hold-preferred";
             hold-while-undecided;
         };
