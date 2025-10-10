@@ -80,11 +80,13 @@
 &mt {
     flavor = "hold-preferred";
     tapping-term-ms = <500>;
+    retro-tap;
 };
 
 &lt {
     tapping-term-ms = <500>;
     flavor = "hold-preferred";
+    retro-tap;
 };
 
 &msc {
@@ -198,7 +200,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
-            hold-while-undecided;
+            retro-tap;
         };
 
         mt_hold_pref: mt_hold_pref {
@@ -209,7 +211,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
-            hold-while-undecided;
+            retro-tap;
+        };
+
+        td_ctrl_alt: td_ctrl_alt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CTRL_ALT";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL>, <&kp LEFT_ALT>;
+
+            tapping-term-ms = <250>;
         };
     };
 
@@ -218,10 +229,10 @@
 
         default {
             bindings = <
-&kp Q                       &kp W             &kp E     &kp R           &kp T                                                                         &kp Y                           &kp U  &kp I      &kp O    &kp P
-&kp A                       &kp S             &kp D     &kp F           &kp G           &mkp MCLK                       &kp BACKSPACE                 &kp H                           &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
-&mt_hold_pref LEFT_SHIFT Z  &kp X             &kp C     &kp V           &kp B           &kp LALT                        &kp ESCAPE                    &kp N                           &kp M  &kp COMMA  &kp DOT  &lt_hold_pref 6 MINUS
-&kp LEFT_SHIFT              &kp LEFT_CONTROL  &kp LGUI  &td_left_func1  &td_left_func2  &lt_hold_pref 5 LEFT_SHIFT      &mt_hold_pref LEFT_SHIFT TAB  &mt_hold_pref LEFT_SHIFT SPACE                             &kp JP_UNDER
+&kp Q                       &kp W         &kp E     &kp R           &kp T                                                                         &kp Y                           &kp U  &kp I      &kp O    &kp P
+&kp A                       &kp S         &kp D     &kp F           &kp G           &mkp MCLK                       &kp BACKSPACE                 &kp H                           &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
+&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C     &kp V           &kp B           &kp LALT                        &kp ESCAPE                    &kp N                           &kp M  &kp COMMA  &kp DOT  &lt_hold_pref 6 MINUS
+&kp LEFT_SHIFT              &td_ctrl_alt  &kp LGUI  &td_left_func1  &td_left_func2  &lt_hold_pref 5 LEFT_SHIFT      &mt_hold_pref LEFT_SHIFT TAB  &mt_hold_pref LEFT_SHIFT SPACE                             &kp JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
