@@ -231,8 +231,8 @@
             bindings = <
 &kp Q                       &kp W         &kp E     &kp R           &kp T                                                                         &kp Y                           &kp U  &kp I      &kp O    &kp P
 &kp A                       &kp S         &kp D     &kp F           &kp G           &mkp MCLK                       &kp BACKSPACE                 &kp H                           &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
-&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C     &kp V           &kp B           &kp LALT                        &kp ESCAPE                    &kp N                           &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
-&kp LEFT_SHIFT              &td_ctrl_alt  &kp LGUI  &td_left_func1  &td_left_func2  &lt_hold_pref 5 LEFT_SHIFT      &mt_hold_pref LEFT_SHIFT TAB  &mt_hold_pref LEFT_SHIFT SPACE                             &lt_hold_pref 6 JP_UNDER
+&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C     &kp V           &kp B           &none                           &kp ESCAPE                    &kp N                           &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
+&kp LEFT_CONTROL            &kp LEFT_ALT  &kp LGUI  &td_left_func1  &td_left_func2  &lt_hold_pref 5 LEFT_SHIFT      &mt_hold_pref LEFT_SHIFT TAB  &mt_hold_pref LEFT_SHIFT SPACE                             &lt_hold_pref 6 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
