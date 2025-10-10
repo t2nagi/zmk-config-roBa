@@ -80,13 +80,11 @@
 &mt {
     flavor = "hold-preferred";
     tapping-term-ms = <500>;
-    retro-tap;
 };
 
 &lt {
     tapping-term-ms = <500>;
     flavor = "hold-preferred";
-    retro-tap;
 };
 
 &msc {
@@ -200,7 +198,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
-            retro-tap;
         };
 
         mt_hold_pref: mt_hold_pref {
@@ -211,7 +208,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
-            retro-tap;
         };
 
         td_ctrl_alt: td_ctrl_alt {
@@ -222,6 +218,26 @@
 
             tapping-term-ms = <250>;
         };
+
+        mt_balanced: mt_balanced {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_BALANCED";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+
+        lt_balanced: lt_balanced {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_BALANCED";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -230,7 +246,7 @@
         default {
             bindings = <
 &kp Q                       &kp W         &kp E     &kp R           &kp T                                                                         &kp Y                           &kp U  &kp I      &kp O    &kp P
-&kp A                       &kp S         &kp D     &kp F           &kp G           &mkp MCLK                       &kp BACKSPACE                 &kp H                           &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
+&kp A                       &kp S         &kp D     &kp F           &kp G           &mkp MCLK                       &kp BACKSPACE                 &kp H                           &kp J  &kp K      &kp L    &lt 2 SEMICOLON
 &mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C     &kp V           &kp B           &none                           &kp ESCAPE                    &kp N                           &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
 &kp LEFT_CONTROL            &kp LEFT_ALT  &kp LGUI  &td_left_func1  &td_left_func2  &lt_hold_pref 5 LEFT_SHIFT      &mt_hold_pref LEFT_SHIFT TAB  &mt_hold_pref LEFT_SHIFT SPACE                             &lt_hold_pref 6 JP_UNDER
             >;
