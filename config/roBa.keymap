@@ -177,9 +177,11 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LEFT_FUNC1";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 3 LS(LANGUAGE_2)>, <&kp LANGUAGE_1>;
+            bindings =
+                <&mt_hold_pref LEFT_COMMAND LS(LANGUAGE_2)>,
+                <&kp LANGUAGE_1>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
         };
 
         td_left_func2: td_left_func2 {
@@ -187,7 +189,7 @@
             label = "TD_LEFT_FUNC2";
             #binding-cells = <0>;
             bindings = <&lt_hold_pref 4 SPACE>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
         };
 
         lt_hold_pref: lt_hold_pref {
@@ -238,6 +240,31 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
+
+        td_left_func3: td_left_func3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LEFT_FUNC3";
+            #binding-cells = <0>;
+            bindings = <&lt_hold_pref 3 BACKSPACE>;
+            tapping-term-ms = <200>;
+        };
+
+        td_rigth_func1: td_rigth_func1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_RIGTH_FUNC1";
+            #binding-cells = <0>;
+            bindings = <&lt_hold_pref 5 ENTER>, <&kp LANGUAGE_1>;
+
+            tapping-term-ms = <200>;
+        };
+
+        td_rigth_func2: td_rigth_func2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_RIGTH_FUNC2";
+            #binding-cells = <0>;
+            bindings = <&lt_hold_pref 4 SPACE>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -245,10 +272,10 @@
 
         default {
             bindings = <
-&kp Q                       &kp W         &kp E     &kp R           &kp T                                                                         &kp Y                           &kp U  &kp I      &kp O    &kp P
-&kp A                       &kp S         &kp D     &kp F           &kp G           &mkp MCLK                       &kp BACKSPACE                 &kp H                           &kp J  &kp K      &kp L    &lt 2 SEMICOLON
-&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C     &kp V           &kp B           &none                           &kp ESCAPE                    &kp N                           &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
-&kp LEFT_CONTROL            &kp LEFT_ALT  &kp LGUI  &td_left_func1  &td_left_func2  &lt_hold_pref 5 LEFT_SHIFT      &mt_hold_pref LEFT_SHIFT TAB  &mt_hold_pref LEFT_SHIFT SPACE                             &lt_hold_pref 6 JP_UNDER
+&kp Q                       &kp W         &kp E                      &kp R           &kp T                                                &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A                       &kp S         &kp D                      &kp F           &kp G           &mkp MCLK           &kp BACKSPACE    &kp H            &kp J  &kp K      &kp L    &lt 2 SEMICOLON
+&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C                      &kp V           &kp B           &none               &kp ESCAPE       &kp N            &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
+&kp LEFT_CONTROL            &kp LEFT_ALT  &lt_hold_pref 3 LC(SPACE)  &td_left_func1  &td_left_func2  &td_left_func3      &td_rigth_func1  &td_rigth_func2                             &lt_hold_pref 6 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
