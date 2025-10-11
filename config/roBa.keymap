@@ -204,7 +204,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_right_func1";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 5 ENTER>;
+            bindings = <&lt_retor_tap 5 ENTER>;
             tapping-term-ms = <200>;
         };
 
@@ -263,6 +263,17 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
+        };
+
+        lt_retor_tap: lt_retor_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_RETOR_TAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            retro-tap;
+            flavor = "hold-preferred";
         };
     };
 
