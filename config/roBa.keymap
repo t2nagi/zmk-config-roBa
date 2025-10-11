@@ -102,6 +102,16 @@
             bindings = <&to 0>;
             key-positions = <27 28>;
         };
+
+        layer_3 {
+            bindings = <&mo 3>;
+            key-positions = <38 37>;
+        };
+
+        layer_5 {
+            bindings = <&mo 5>;
+            key-positions = <39 38>;
+        };
     };
 
     macros {
