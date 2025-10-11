@@ -178,7 +178,7 @@
             label = "TD_LEFT_FUNC1";
             #binding-cells = <0>;
             bindings =
-                <&mt_hold_pref LEFT_COMMAND LS(LANGUAGE_2)>,
+                <&mt_retor_tap LEFT_COMMAND LS(LANGUAGE_2)>,
                 <&kp LANGUAGE_1>;
 
             tapping-term-ms = <200>;
@@ -274,6 +274,17 @@
             tapping-term-ms = <200>;
             retro-tap;
             flavor = "hold-preferred";
+        };
+
+        mt_retor_tap: mt_retor_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_RETOR_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            retro-tap;
         };
     };
 
