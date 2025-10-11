@@ -196,7 +196,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LEFT_FUNC3";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 3 BACKSPACE>;
+            bindings = <&lt_hold_pref 5 BACKSPACE>;
             tapping-term-ms = <200>;
         };
 
@@ -204,8 +204,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_right_func1";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 5 ENTER>, <&kp LANGUAGE_1>;
-
+            bindings = <&lt_hold_pref 5 ENTER>;
             tapping-term-ms = <200>;
         };
 
