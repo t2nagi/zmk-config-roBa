@@ -114,56 +114,6 @@
         };
     };
 
-    macros {
-        mac_screen_cupture_3: mac_screen_cupture_3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>,
-                <&macro_release>,
-                <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
-
-            label = "MAC_SCREEN_CUPTURE_3";
-        };
-
-        mac_screen_cupture_4: mac_screen_cupture_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>,
-                <&macro_release>,
-                <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
-
-            label = "MAC_SCREEN_CUPTURE_4";
-        };
-
-        chrome_page_back: chrome_page_back {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_COMMAND &kp LEFT_ARROW>,
-                <&macro_release>,
-                <&kp LEFT_COMMAND &kp LEFT_ARROW>;
-
-            label = "CHROME_PAGE_BACK";
-        };
-
-        mac_trash: mac_trash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_COMMAND &kp BSPC>,
-                <&macro_release>,
-                <&kp LEFT_COMMAND &kp BSPC>;
-
-            label = "MAC_TRASH";
-        };
-    };
-
     behaviors {
         encode_sensor_down_up: encode_sensor_down_up {
             compatible = "zmk,behavior-sensor-rotate";
@@ -300,10 +250,10 @@
 
         default {
             bindings = <
-&kp Q                       &kp W         &kp E                       &kp R           &kp T                                                &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A                       &kp S         &kp D                       &kp F           &kp G           &mkp MCLK           &kp BACKSPACE    &kp H            &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
-&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C                       &kp V           &kp B           &none               &kp ESCAPE       &kp N            &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
-&kp LEFT_CONTROL            &kp LEFT_ALT  &lt_retor_tap 3 LANGUAGE_1  &td_left_func1  &td_left_func2  &td_left_func3      &td_right_func1  &td_right_func2                             &lt_hold_pref 6 JP_UNDER
+&kp Q                       &kp W         &kp E             &kp R           &kp T                                                &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A                       &kp S         &kp D             &kp F           &kp G           &mkp MCLK           &kp BACKSPACE    &kp H            &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
+&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C             &kp V           &kp B           &none               &kp ESCAPE       &kp N            &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
+&kp LEFT_CONTROL            &kp LEFT_ALT  &kp LEFT_COMMAND  &td_left_func1  &td_left_func2  &td_left_func3      &td_right_func1  &td_right_func2                             &lt_hold_pref 6 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
@@ -311,10 +261,10 @@
 
         mouse {
             bindings = <
-&kp ESCAPE      &trans  &trans  &trans  &trans                        &trans             &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
-&kp TAB         &trans  &trans  &trans  &trans    &trans      &trans  &chrome_page_back  &mkp MB1      &mkp MB3    &mkp MB2       &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans    &trans      &trans  &trans             &trans        &trans      &trans         &trans
-&trans          &trans  &trans  &trans  &mkp MB1  &trans      &trans  &mkp MB1                                                    &trans
+&kp ESCAPE      &trans  &trans  &trans  &trans                        &trans              &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&kp TAB         &trans  &trans  &trans  &trans    &trans      &trans  &kp LG(LEFT_ARROW)  &mkp MB1      &mkp MB3    &mkp MB2       &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans    &trans      &trans  &trans              &trans        &trans      &trans         &trans
+&trans          &trans  &trans  &trans  &mkp MB1  &trans      &trans  &mkp MB1                                                     &trans
             >;
         };
 
@@ -340,10 +290,10 @@
 
         allow_and_option {
             bindings = <
-&kp ESC         &trans  &mac_screen_cupture_3  &mac_screen_cupture_4  &trans                                    &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
-&kp TAB         &trans  &mac_trash             &trans                 &trans          &trans           &trans   &kp PG_UP         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
-&kp LEFT_SHIFT  &trans  &trans                 &trans                 &trans          &kp JP_ZKHK      &trans   &kp PG_DN         &kp HOME      &kp DOWN        &kp END        &kp RIGHT_SHIFT
-&trans          &trans  &trans                 &kp LANGUAGE_2         &kp LANGUAGE_1  &trans           &kp DEL  &kp BSPC                                                       &kp DELETE
+&kp ESC         &trans     &kp LG(N3)      &kp LG(N4)      &trans                                    &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
+&kp TAB         &kp LG(S)  &kp LG(DELETE)  &trans          &trans          &trans           &trans   &kp PG_UP         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
+&kp LEFT_SHIFT  &trans     &kp LG(C)       &kp LG(V)       &trans          &kp JP_ZKHK      &trans   &kp PG_DN         &kp HOME      &kp DOWN        &kp END        &kp RIGHT_SHIFT
+&trans          &trans     &trans          &kp LANGUAGE_2  &kp LANGUAGE_1  &trans           &kp DEL  &kp BSPC                                                       &kp DELETE
             >;
 
             sensor-bindings = <&encode_arrow_left_right>;
@@ -364,15 +314,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &out OUT_BLE  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &out OUT_USB  &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans                                                  &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp JP_BSLH  &kp JP_CARET  &kp JP_YEN
-&kp TAB           &kp AT_SIGN       &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)     &kp JP_LBKT  &kp JP_AT     &kp JP_COLON
-&kp LEFT_SHIFT    &trans            &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)    &kp JP_RBKT  &kp JP_SLASH  &trans
-&trans            &trans            &trans            &trans            &trans            &trans      &trans  &trans                                                         &trans
             >;
         };
     };
