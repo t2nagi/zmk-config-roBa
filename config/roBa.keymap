@@ -250,10 +250,10 @@
 
         default {
             bindings = <
-&kp Q                       &kp W         &kp E                                 &kp R           &kp T                                                &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A                       &kp S         &kp D                                 &kp F           &kp G           &mkp MCLK           &kp BACKSPACE    &kp H            &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
-&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C                                 &kp V           &kp B           &none               &kp ESCAPE       &kp N            &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
-&kp LEFT_CONTROL            &kp LEFT_ALT  &mt_retor_tap LEFT_COMMAND LC(SPACE)  &td_left_func1  &td_left_func2  &td_left_func3      &td_right_func1  &td_right_func2                             &lt_hold_pref 6 JP_UNDER
+&kp Q                       &kp W         &kp E             &kp R           &kp T                                                &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A                       &kp S         &kp D             &kp F           &kp G           &mkp MCLK           &kp BACKSPACE    &kp H            &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
+&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C             &kp V           &kp B           &none               &kp ESCAPE       &kp N            &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
+&kp LEFT_CONTROL            &kp LEFT_ALT  &kp LEFT_COMMAND  &td_left_func1  &td_left_func2  &td_left_func3      &td_right_func1  &td_right_func2                             &lt_hold_pref 6 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
