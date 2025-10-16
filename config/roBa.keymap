@@ -103,17 +103,17 @@
             key-positions = <27 28>;
         };
 
-        layer_3 {
-            bindings = <&mo 3>;
+        left_func1 {
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <38 37>;
         };
 
-        layer_5 {
-            bindings = <&mo 5>;
+        left_func2 {
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <39 38>;
         };
 
-        cmd_shift {
+        right_func2 {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <41 40>;
         };
@@ -158,7 +158,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LEFT_FUNC3";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 5 TAB>;
+            bindings = <&lt_hold_pref 6 TAB>;
             tapping-term-ms = <200>;
         };
 
@@ -255,10 +255,10 @@
 
         default {
             bindings = <
-&kp Q                       &kp W         &kp E             &kp R           &kp T                                                &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A                       &kp S         &kp D             &kp F           &kp G           &mkp MCLK           &kp BACKSPACE    &kp H            &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
-&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C             &kp V           &kp B           &none               &kp ESCAPE       &kp N            &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
-&kp LCTRL                   &kp LEFT_ALT  &kp LEFT_COMMAND  &td_left_func1  &td_left_func2  &td_left_func3      &td_right_func1  &td_right_func2                             &lt_hold_pref 6 JP_UNDER
+&kp Q      &kp W         &kp E             &kp R           &kp T                                                &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D             &kp F           &kp G           &mkp MCLK           &kp BACKSPACE    &kp H            &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
+&kp Z      &kp X         &kp C             &kp V           &kp B           &none               &kp ESCAPE       &kp N            &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &td_left_func1  &td_left_func2  &td_left_func3      &td_right_func1  &td_right_func2                             &lt_hold_pref 7 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
@@ -295,7 +295,7 @@
 
         allow_and_option {
             bindings = <
-&kp ESC         &trans     &kp LG(LS(N3))  &kp LG(LS(N4))  &trans                                    &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
+&kp ESC         &trans     &trans          &trans          &trans                                    &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
 &kp TAB         &kp LG(S)  &kp LG(DELETE)  &kp LANGUAGE_2  &kp LANG1       &trans           &trans   &kp PG_UP         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
 &kp LEFT_SHIFT  &trans     &kp LG(C)       &kp LG(V)       &trans          &kp JP_ZKHK      &trans   &kp PG_DN         &kp HOME      &kp DOWN        &kp END        &kp RIGHT_SHIFT
 &trans          &trans     &trans          &kp LANGUAGE_2  &kp LANGUAGE_1  &trans           &kp DEL  &kp BSPC                                                       &kp DELETE
@@ -304,12 +304,21 @@
             sensor-bindings = <&encode_arrow_left_right>;
         };
 
-        options {
+        options_1 {
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp JP_BSLH  &kp JP_CARET  &kp JP_YEN
 &kp TAB           &kp AT_SIGN       &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_8)  &kp LS(COMMA)     &kp JP_LBKT  &kp JP_AT     &kp JP_COLON
 &kp LEFT_SHIFT    &trans            &trans            &trans            &trans            &trans      &trans  &kp LS(NUMBER_9)  &kp LS(PERIOD)    &kp JP_RBKT  &kp JP_SLASH  &trans
 &trans            &trans            &trans            &trans            &trans            &trans      &trans  &trans                                                         &trans
+            >;
+        };
+
+        options_2 {
+            bindings = <
+&trans  &trans  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
