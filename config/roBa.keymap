@@ -142,7 +142,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LEFT_FUNC1";
             #binding-cells = <0>;
-            bindings = <&lt_retor_tap 3 LANG2>;
+            bindings = <&lt_retor_tap 5 LANG2>;
             tapping-term-ms = <200>;
         };
 
