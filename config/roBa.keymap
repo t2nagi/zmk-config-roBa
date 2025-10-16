@@ -142,7 +142,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LEFT_FUNC1";
             #binding-cells = <0>;
-            bindings = <&lt_retor_tap 5 LANG2>;
+            bindings = <&kp LEFT_COMMAND>;
             tapping-term-ms = <200>;
         };
 
@@ -158,7 +158,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LEFT_FUNC3";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 6 TAB>;
+            bindings = <&lt_hold_pref 5 TAB>;
             tapping-term-ms = <200>;
         };
 
@@ -255,10 +255,10 @@
 
         default {
             bindings = <
-&kp Q      &kp W         &kp E             &kp R           &kp T                                                &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D             &kp F           &kp G           &mkp MCLK           &kp BACKSPACE    &kp H            &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
-&kp Z      &kp X         &kp C             &kp V           &kp B           &none               &kp ESCAPE       &kp N            &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &td_left_func1  &td_left_func2  &td_left_func3      &td_right_func1  &td_right_func2                             &lt_hold_pref 7 JP_UNDER
+&kp Q      &kp W         &kp E                         &kp R           &kp T                                                &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D                         &kp F           &kp G           &mkp MCLK           &kp BACKSPACE    &kp H            &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
+&kp Z      &kp X         &kp C                         &kp V           &kp B           &none               &kp ESCAPE       &kp N            &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
+&kp LCTRL  &kp LEFT_ALT  &lt_hold_pref 6 LEFT_COMMAND  &td_left_func1  &td_left_func2  &td_left_func3      &td_right_func1  &td_right_func2                             &lt_hold_pref 7 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
