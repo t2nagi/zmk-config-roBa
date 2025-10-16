@@ -104,7 +104,7 @@
         };
 
         left_func1 {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&mo 3>;
             key-positions = <38 37>;
         };
 
