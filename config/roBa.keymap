@@ -161,7 +161,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_right_func1";
             #binding-cells = <0>;
-            bindings = <&lt_retor_tap 3 LANG1>;
+            bindings = <&lt_retor_tap 3 BACKSPACE>;
             tapping-term-ms = <200>;
         };
 
@@ -169,7 +169,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_right_func2";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 4 SPACE>;
+            bindings = <&lt_hold_pref 4 ENTER>;
             tapping-term-ms = <200>;
         };
 
