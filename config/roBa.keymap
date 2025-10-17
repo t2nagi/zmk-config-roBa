@@ -146,7 +146,7 @@
                 <&lt_hold_pref 3 LANGUAGE_2>,
                 <&lt_hold_pref 5 LANGUAGE_1>;
 
-            tapping-term-ms = <500>;
+            tapping-term-ms = <350>;
         };
 
         func_left2: func_left2 {
