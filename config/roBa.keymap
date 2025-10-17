@@ -143,8 +143,8 @@
             label = "FUNC_LEFT1";
             #binding-cells = <0>;
             bindings =
-                <&lt_hold_pref 3 LANGUAGE_2>,
-                <&lt_hold_pref 5 LANGUAGE_1>;
+                <&lt_retor_tap 3 LANGUAGE_2>,
+                <&lt_retor_tap 5 LANGUAGE_1>;
 
             tapping-term-ms = <200>;
         };
