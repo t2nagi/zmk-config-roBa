@@ -308,7 +308,7 @@
 &trans          &trans     &trans          &kp LANGUAGE_2  &kp LANGUAGE_1  &trans           &kp DEL  &kp BSPC                                                       &kp DELETE
             >;
 
-            sensor-bindings = <&encode_arrow_left_right>;
+            sensor-bindings = <&encode_sensor_left_right>;
         };
 
         options_1 {
