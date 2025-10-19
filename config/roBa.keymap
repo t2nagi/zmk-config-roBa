@@ -52,6 +52,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
+
 
 #define SCRL_UP MOVE_Y(ZMK_POINTING_DEFAULT_SCRL_VAL)
 #define SCRL_DOWN MOVE_Y(-ZMK_POINTING_DEFAULT_SCRL_VAL)
@@ -60,8 +62,13 @@
 #define ENCODER_SENSOR_UP MOVE_Y(ENCODER_SENSOR_SCRL_VAL)
 #define ENCODER_SENSOR_DOWN MOVE_Y(-ENCODER_SENSOR_SCRL_VAL)
 
+
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 1 2000>;
+};
+ 
 &trackball {
-    automouse-layer = <1>;
+    // automouse-layer = <1>;
     scroll-layers = <2>;
 
     // arrows {
