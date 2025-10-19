@@ -104,12 +104,12 @@
         };
 
         left_func1 {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&kp LANG2>;
             key-positions = <38 37>;
         };
 
         left_func2 {
-            bindings = <&mo 6>;
+            bindings = <&kp LANG1>;
             key-positions = <39 38>;
         };
 
@@ -142,10 +142,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_LEFT1";
             #binding-cells = <0>;
-            bindings =
-                <&lt_retor_tap 3 LANGUAGE_2>,
-                <&lt_retor_tap 5 LANGUAGE_1>;
-
+            bindings = <&lt_hold_pref 3 LANGUAGE_2>;
             tapping-term-ms = <250>;
         };
 
