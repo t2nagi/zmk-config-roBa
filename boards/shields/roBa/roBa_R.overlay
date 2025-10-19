@@ -40,7 +40,7 @@
 
         input-processors = <&zip_temp_layer 1 2000>;
 
-        scroller {
+        scroll {
             layers = <2>;
             input-processors = <
                 &zip_xy_to_scroll_mapper
