@@ -140,7 +140,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODE_ARROW_LEFT_RIGHT";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
             tap-ms = <20>;
         };
