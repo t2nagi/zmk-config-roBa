@@ -1,5 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 120    // default: 10
+#define TRACKBALL_DEFAULT_SCRL_VAL 120    // default: 10
 #define ENCODER_SENSOR_SCRL_VAL 180
 
 // OS設定を日本語キーボードのまま使用するための変換定義
@@ -55,13 +54,14 @@
 #include <input/processors.dtsi>
 
 
-#define SCRL_UP MOVE_Y(ZMK_POINTING_DEFAULT_SCRL_VAL)
-#define SCRL_DOWN MOVE_Y(-ZMK_POINTING_DEFAULT_SCRL_VAL)
-#define SCRL_LEFT MOVE_X(-ZMK_POINTING_DEFAULT_SCRL_VAL)
-#define SCRL_RIGHT MOVE_X(ZMK_POINTING_DEFAULT_SCRL_VAL)
+#define SCRL_UP MOVE_Y(TRACKBALL_DEFAULT_SCRL_VAL)
+#define SCRL_DOWN MOVE_Y(-TRACKBALL_DEFAULT_SCRL_VAL)
+#define SCRL_LEFT MOVE_X(TRACKBALL_DEFAULT_SCRL_VAL)
+#define SCRL_RIGHT MOVE_X(-TRACKBALL_DEFAULT_SCRL_VAL)
 #define ENCODER_SENSOR_UP MOVE_Y(ENCODER_SENSOR_SCRL_VAL)
 #define ENCODER_SENSOR_DOWN MOVE_Y(-ENCODER_SENSOR_SCRL_VAL)
-
+#define ENCODER_SENSOR_LEFT MOVE_X(ENCODER_SENSOR_SCRL_VAL)
+#define ENCODER_SENSOR_RIGHT MOVE_X(-ENCODER_SENSOR_SCRL_VAL)
 
 &mkp_input_listener {
     input-processors = <&zip_temp_layer 1 2000>;
@@ -136,11 +136,11 @@
             tap-ms = <20>;
         };
 
-        encode_arrow_left_right: encode_arrow_left_right {
+        encode_sensor_left_right: encode_sensor_left_right {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODE_ARROW_LEFT_RIGHT";
+            label = "ENCODE_SENSOR_LEFT_RIGHT";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+            bindings = <&msc ENCODER_SENSOR_LEFT>, <&msc ENCODER_SENSOR_RIGHT>;
 
             tap-ms = <20>;
         };
