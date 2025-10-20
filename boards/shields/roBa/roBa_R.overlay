@@ -25,8 +25,6 @@
         18
         19
         20
-        38
-        41
     >;
 
     require-prior-idle-ms = <200>;
