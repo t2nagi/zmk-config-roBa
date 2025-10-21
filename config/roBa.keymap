@@ -176,7 +176,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT1";
             #binding-cells = <0>;
-            bindings = <&lt_retor_tap 3 BACKSPACE>;
+            bindings = <&lt_retor_tap 3 LEFT_SHIFT>;
             tapping-term-ms = <200>;
         };
 
