@@ -60,10 +60,11 @@
 &mkp_input_listener {
     input-processors = <&zip_temp_layer 1 2000>;
 };
- 
+
+/* 
 &trackball {
-    // automouse-layer = <1>;
-    // scroll-layers = <2>;
+    automouse-layer = <1>;
+    scroll-layers = <2>;
 
     // arrows {
     //     layers = <3>;
@@ -77,6 +78,7 @@
     //     tap-ms = <5>;
     // };
 };
+*/
 
 &mt {
     flavor = "hold-preferred";
