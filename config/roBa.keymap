@@ -169,7 +169,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_LEFT3";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 5 TAB>;
+            bindings = <&lt_hold_pref 5 LANG1>;
             tapping-term-ms = <200>;
         };
 
@@ -177,7 +177,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT1";
             #binding-cells = <0>;
-            bindings = <&lt_retor_tap 3 BACKSPACE>;
+            bindings = <&lt_retor_tap 3 LEFT_SHIFT>;
             tapping-term-ms = <200>;
         };
 
@@ -266,10 +266,10 @@
 
         default {
             bindings = <
-&kp Q      &kp W         &kp E             &kp R        &kp T                                        &kp Y         &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D             &kp F        &kp G        &mkp MCLK        &kp BACKSPACE  &kp H         &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
-&kp Z      &kp X         &kp C             &kp V        &kp B        &none            &kp ESCAPE     &kp N         &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &func_left1  &func_left2  &func_left3      &func_right1   &func_right2                             &lt_hold_pref 7 JP_UNDER
+&kp Q                       &kp W         &kp E             &kp R        &kp T                                        &kp Y         &kp U  &kp I      &kp O    &kp P
+&kp A                       &kp S         &kp D             &kp F        &kp G        &mkp MCLK        &kp BACKSPACE  &kp H         &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
+&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C             &kp V        &kp B        &none            &kp ESCAPE     &kp N         &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
+&kp LCTRL                   &kp LEFT_ALT  &kp LEFT_COMMAND  &func_left1  &func_left2  &func_left3      &func_right1   &func_right2                             &lt_hold_pref 7 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
@@ -344,10 +344,10 @@
 
         left_only1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans    &kp UP    &trans     &kp BACKSPACE                      &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER      &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans         &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans         &trans      &trans  &trans                          &trans
             >;
         };
     };
