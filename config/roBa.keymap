@@ -1,4 +1,4 @@
-#define ENCODER_SENSOR_SCRL_VAL 180
+#define ENCODER_SENSOR_SCRL_VAL 240
 
 // OS設定を日本語キーボードのまま使用するための変換定義
 
