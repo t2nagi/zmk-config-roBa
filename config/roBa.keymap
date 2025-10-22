@@ -184,7 +184,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT2";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 4 SPACE>;
+            bindings = <&lt_hold_pref 4 ENTER>;
             tapping-term-ms = <200>;
         };
 
