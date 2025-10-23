@@ -45,21 +45,19 @@
 #define JP_QMARK LS(JP_SLASH) // ?
 #define JP_UNDER LS(INT1)     // _
 
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 #define ENCODER_SENSOR_UP MOVE_Y(ENCODER_SENSOR_SCRL_VAL)
 #define ENCODER_SENSOR_DOWN MOVE_Y(-ENCODER_SENSOR_SCRL_VAL)
 #define ENCODER_SENSOR_LEFT MOVE_X(-ENCODER_SENSOR_SCRL_VAL)
 #define ENCODER_SENSOR_RIGHT MOVE_X(ENCODER_SENSOR_SCRL_VAL)
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 1 2000>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 1 2000>; };
 
 /* 
 &trackball {
@@ -179,7 +177,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT1";
             #binding-cells = <0>;
-            bindings = <&lt_retor_tap 3 LANG1>;
+            bindings = <&lt_retor_tap 3 ENTER>;
             tapping-term-ms = <200>;
         };
 
@@ -187,7 +185,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT2";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 4 ENTER>;
+            bindings = <&lt_hold_pref 4 LANG1>;
             tapping-term-ms = <200>;
         };
 
