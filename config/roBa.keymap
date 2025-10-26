@@ -145,7 +145,7 @@
             #binding-cells = <0>;
             bindings = <&lt_hold_pref 3 LANGUAGE_2>, <&lt_hold_pref 6 LANG1>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
         };
 
         func_left2: func_left2 {
