@@ -101,7 +101,7 @@
 
         to_default_layer {
             bindings = <&to 0>;
-            key-positions = <27 28>;
+            key-positions = <38 41>;
         };
 
         left_func1 {
@@ -110,23 +110,13 @@
         };
 
         left_func2 {
-            bindings = <&kp LANG1>;
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <39 38>;
         };
 
         right_func2 {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <41 40>;
-        };
-
-        layer_pattern_1 {
-            bindings = <&tog 8>;
-            key-positions = <27 0>;
-        };
-
-        layer_pattern_2 {
-            bindings = <&tog 8>;
-            key-positions = <27 1>;
         };
     };
 
@@ -153,7 +143,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_LEFT1";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 3 LANGUAGE_2>;
+            bindings = <&lt_hold_pref 3 LANGUAGE_2>, <&lt_hold_pref 6 LANG1>;
+
             tapping-term-ms = <250>;
         };
 
@@ -177,7 +168,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT1";
             #binding-cells = <0>;
-            bindings = <&lt_retor_tap 3 ENTER>;
+            bindings = <&lt_retor_tap 4 ENTER>;
             tapping-term-ms = <200>;
         };
 
@@ -185,7 +176,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT2";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 4 LANG1>;
+            bindings = <&lt_hold_pref 3 LANG1>;
             tapping-term-ms = <200>;
         };
 
@@ -266,10 +257,10 @@
 
         default {
             bindings = <
-&kp Q                       &kp W         &kp E             &kp R        &kp T                                        &kp Y         &kp U  &kp I      &kp O    &kp P
-&kp A                       &kp S         &kp D             &kp F        &kp G        &mkp MCLK        &kp BACKSPACE  &kp H         &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
-&mt_hold_pref LEFT_SHIFT Z  &kp X         &kp C             &kp V        &kp B        &kp ENTER        &kp ESCAPE     &kp N         &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
-&kp LCTRL                   &kp LEFT_ALT  &kp LEFT_COMMAND  &func_left1  &func_left2  &func_left3      &func_right1   &func_right2                             &lt_hold_pref 7 JP_UNDER
+&kp Q      &kp W         &kp E             &kp R        &kp T                                                 &kp Y         &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D             &kp F        &kp G        &mkp MCLK                  &kp ESC       &kp H         &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
+&kp Z      &kp X         &kp C             &kp V        &kp B        &lt_hold_pref 7 LANG2      &kp LANG1     &kp N         &kp M  &kp COMMA  &kp DOT  &mt_hold_pref LEFT_SHIFT MINUS
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &func_left1  &func_left2  &func_left3                &func_right1  &func_right2                             &lt_hold_pref 7 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
@@ -326,7 +317,7 @@
 
         options_2 {
             bindings = <
-&trans  &trans  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans                          &trans
@@ -335,8 +326,8 @@
 
         setting {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &out OUT_BLE  &tog 0        &trans        &trans        &trans        &bt BT_CLR
+&to 0   &to 8   &trans  &trans  &trans                            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &out OUT_BLE  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &out OUT_USB  &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans                                                  &trans
             >;
@@ -344,10 +335,10 @@
 
         left_only1 {
             bindings = <
-&trans  &trans    &kp UP    &trans     &kp BACKSPACE                      &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER      &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans         &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans         &trans      &trans  &trans                          &trans
+&kp ESCAPE  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)     &kp BACKSPACE                      &trans  &trans  &trans  &trans  &trans
+&kp TAB     &kp LEFT      &kp DOWN  &kp RIGHT         &kp ENTER      &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans    &trans            &trans         &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans    &kp LEFT_CONTROL  &kp LEFT_GUI   &trans      &trans  &trans                          &trans
             >;
         };
     };
