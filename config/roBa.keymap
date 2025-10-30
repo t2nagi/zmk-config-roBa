@@ -159,7 +159,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_LEFT3";
             #binding-cells = <0>;
-            bindings = <&mt_hold_pref LEFT_SHIFT LANG1>;
+            bindings = <&mt_hold_pref LEFT_SHIFT BACKSPACE>;
             tapping-term-ms = <200>;
         };
 
