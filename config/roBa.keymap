@@ -143,7 +143,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_LEFT1";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 4 LANGUAGE_2>;
+            bindings = <&lt_hold_pref 5 LANGUAGE_2>;
             tapping-term-ms = <200>;
         };
 
@@ -151,7 +151,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_LEFT2";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 5 SPACE>;
+            bindings = <&lt_hold_pref 4 SPACE>;
             tapping-term-ms = <200>;
         };
 
