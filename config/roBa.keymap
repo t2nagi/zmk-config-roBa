@@ -105,12 +105,12 @@
         };
 
         left_func1 {
-            bindings = <&mo 6>;
+            bindings = <&mo 3>;
             key-positions = <38 37>;
         };
 
         left_func2 {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&mo 6>;
             key-positions = <39 38>;
         };
 
