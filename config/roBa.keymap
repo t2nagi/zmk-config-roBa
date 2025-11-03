@@ -296,10 +296,10 @@
 
         allow_and_option {
             bindings = <
-&kp ESC         &trans     &trans             &trans          &kp BACKSPACE                             &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
-&kp TAB         &kp LG(S)  &kp LG(BACKSPACE)  &trans          &kp ENTER       &trans           &trans   &kp PG_UP         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
-&kp LEFT_SHIFT  &trans     &kp LG(C)          &kp LG(V)       &trans          &kp JP_ZKHK      &trans   &kp PG_DN         &kp HOME      &kp DOWN        &kp END        &kp RIGHT_SHIFT
-&trans          &trans     &trans             &kp LANGUAGE_2  &kp LANGUAGE_1  &trans           &kp DEL  &kp BSPC                                                       &kp DELETE
+&kp ESC         &trans     &trans             &trans     &kp BACKSPACE                           &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
+&kp TAB         &kp LG(S)  &kp LG(BACKSPACE)  &trans     &kp ENTER      &trans           &trans  &kp PG_UP         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
+&kp LEFT_SHIFT  &trans     &kp LG(C)          &kp LG(V)  &trans         &kp JP_ZKHK      &trans  &kp PG_DN         &kp HOME      &kp DOWN        &kp END        &kp RIGHT_SHIFT
+&trans          &trans     &trans             &trans     &trans         &trans           &trans  &trans                                                         &kp DELETE
             >;
 
             sensor-bindings = <&encode_sensor_left_right>;
