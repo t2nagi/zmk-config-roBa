@@ -170,8 +170,8 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -214,11 +214,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LANGUAGE 2
-  - LANGUAGE 1
   - {t: ▽, type: trans}
-  - DEL
-  - BSPC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - DELETE
   options_1:
   - Sft+1
@@ -302,9 +302,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -400,8 +400,8 @@ combos:
 - p: [38, 41]
   k: {t: default, h: toggle}
 - p: [38, 37]
-  k: options_2
+  k: function_and_number
 - p: [39, 38]
-  k: LEFT SHIFT
+  k: options_2
 - p: [41, 40]
-  k: LEFT SHIFT
+  k: function_and_number

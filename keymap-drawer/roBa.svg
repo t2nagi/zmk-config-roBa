@@ -324,21 +324,19 @@ path.combo {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
-<a href="#options_2">
-<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+<a href="#function_and_number">
+<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="288" y="226" width="28" height="26" class="combo"/>
-<text x="302" y="239" class="combo tap">
-<tspan x="302" dy="-0.6em">LEFT</tspan><tspan x="302" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#options_2">
+<text x="302" y="239" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+</a></g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="440" y="226" width="28" height="26" class="combo"/>
-<text x="454" y="239" class="combo tap">
-<tspan x="454" dy="-0.6em">LEFT</tspan><tspan x="454" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#function_and_number">
+<text x="454" y="239" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 339)" class="layer-mouse">
@@ -540,21 +538,19 @@ path.combo {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
-<a href="#options_2">
-<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+<a href="#function_and_number">
+<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="288" y="226" width="28" height="26" class="combo"/>
-<text x="302" y="239" class="combo tap">
-<tspan x="302" dy="-0.6em">LEFT</tspan><tspan x="302" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#options_2">
+<text x="302" y="239" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+</a></g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="440" y="226" width="28" height="26" class="combo"/>
-<text x="454" y="239" class="combo tap">
-<tspan x="454" dy="-0.6em">LEFT</tspan><tspan x="454" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#function_and_number">
+<text x="454" y="239" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 678)" class="layer-mouse_scroll">
@@ -756,21 +752,19 @@ path.combo {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
-<a href="#options_2">
-<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+<a href="#function_and_number">
+<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="288" y="226" width="28" height="26" class="combo"/>
-<text x="302" y="239" class="combo tap">
-<tspan x="302" dy="-0.6em">LEFT</tspan><tspan x="302" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#options_2">
+<text x="302" y="239" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+</a></g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="440" y="226" width="28" height="26" class="combo"/>
-<text x="454" y="239" class="combo tap">
-<tspan x="454" dy="-0.6em">LEFT</tspan><tspan x="454" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#function_and_number">
+<text x="454" y="239" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1017)" class="layer-function_and_number">
@@ -927,13 +921,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(208, 225)" class="key trans keypos-37">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(208, 225)" class="key held keypos-37">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
-<g transform="translate(271, 231) rotate(9.0)" class="key trans keypos-38">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(271, 231) rotate(9.0)" class="key held keypos-38">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(333, 247) rotate(20.0)" class="key trans keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -963,21 +955,19 @@ path.combo {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
-<a href="#options_2">
-<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+<a href="#function_and_number">
+<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="288" y="226" width="28" height="26" class="combo"/>
-<text x="302" y="239" class="combo tap">
-<tspan x="302" dy="-0.6em">LEFT</tspan><tspan x="302" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#options_2">
+<text x="302" y="239" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+</a></g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="440" y="226" width="28" height="26" class="combo"/>
-<text x="454" y="239" class="combo tap">
-<tspan x="454" dy="-0.6em">LEFT</tspan><tspan x="454" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#function_and_number">
+<text x="454" y="239" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1355)" class="layer-allow_and_option">
@@ -1151,29 +1141,25 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(208, 225)" class="key keypos-37">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">2</tspan>
-</text>
+<g transform="translate(208, 225)" class="key trans keypos-37">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(271, 231) rotate(9.0)" class="key keypos-38">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">1</tspan>
-</text>
+<g transform="translate(271, 231) rotate(9.0)" class="key trans keypos-38">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(333, 247) rotate(20.0)" class="key trans keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(423, 247) rotate(-20.0)" class="key keypos-40">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">DEL</text>
+<g transform="translate(423, 247) rotate(-20.0)" class="key trans keypos-40">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(485, 230) rotate(-10.0)" class="key keypos-41">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BSPC</text>
+<g transform="translate(485, 230) rotate(-10.0)" class="key trans keypos-41">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(729, 231)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1189,21 +1175,19 @@ path.combo {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
-<a href="#options_2">
-<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+<a href="#function_and_number">
+<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="288" y="226" width="28" height="26" class="combo"/>
-<text x="302" y="239" class="combo tap">
-<tspan x="302" dy="-0.6em">LEFT</tspan><tspan x="302" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#options_2">
+<text x="302" y="239" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+</a></g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="440" y="226" width="28" height="26" class="combo"/>
-<text x="454" y="239" class="combo tap">
-<tspan x="454" dy="-0.6em">LEFT</tspan><tspan x="454" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#function_and_number">
+<text x="454" y="239" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1694)" class="layer-options_1">
@@ -1395,21 +1379,19 @@ path.combo {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
-<a href="#options_2">
-<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+<a href="#function_and_number">
+<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="288" y="226" width="28" height="26" class="combo"/>
-<text x="302" y="239" class="combo tap">
-<tspan x="302" dy="-0.6em">LEFT</tspan><tspan x="302" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#options_2">
+<text x="302" y="239" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+</a></g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="440" y="226" width="28" height="26" class="combo"/>
-<text x="454" y="239" class="combo tap">
-<tspan x="454" dy="-0.6em">LEFT</tspan><tspan x="454" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#function_and_number">
+<text x="454" y="239" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 2033)" class="layer-options_2">
@@ -1567,15 +1549,15 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(208, 225)" class="key held keypos-37">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(208, 225)" class="key trans keypos-37">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(271, 231) rotate(9.0)" class="key held keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
-<g transform="translate(333, 247) rotate(20.0)" class="key trans keypos-39">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(333, 247) rotate(20.0)" class="key held keypos-39">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(423, 247) rotate(-20.0)" class="key trans keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1599,21 +1581,19 @@ path.combo {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
-<a href="#options_2">
-<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+<a href="#function_and_number">
+<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="288" y="226" width="28" height="26" class="combo"/>
-<text x="302" y="239" class="combo tap">
-<tspan x="302" dy="-0.6em">LEFT</tspan><tspan x="302" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#options_2">
+<text x="302" y="239" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+</a></g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="440" y="226" width="28" height="26" class="combo"/>
-<text x="454" y="239" class="combo tap">
-<tspan x="454" dy="-0.6em">LEFT</tspan><tspan x="454" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#function_and_number">
+<text x="454" y="239" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 2372)" class="layer-setting">
@@ -1815,21 +1795,19 @@ path.combo {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
-<a href="#options_2">
-<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+<a href="#function_and_number">
+<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="288" y="226" width="28" height="26" class="combo"/>
-<text x="302" y="239" class="combo tap">
-<tspan x="302" dy="-0.6em">LEFT</tspan><tspan x="302" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#options_2">
+<text x="302" y="239" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+</a></g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="440" y="226" width="28" height="26" class="combo"/>
-<text x="454" y="239" class="combo tap">
-<tspan x="454" dy="-0.6em">LEFT</tspan><tspan x="454" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#function_and_number">
+<text x="454" y="239" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 2711)" class="layer-left_only1">
@@ -2025,21 +2003,19 @@ path.combo {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
-<a href="#options_2">
-<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+<a href="#function_and_number">
+<text x="240" y="228" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="288" y="226" width="28" height="26" class="combo"/>
-<text x="302" y="239" class="combo tap">
-<tspan x="302" dy="-0.6em">LEFT</tspan><tspan x="302" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#options_2">
+<text x="302" y="239" class="combo tap layer-activator"><tspan style="font-size: 78%">options_2</tspan></text>
+</a></g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="440" y="226" width="28" height="26" class="combo"/>
-<text x="454" y="239" class="combo tap">
-<tspan x="454" dy="-0.6em">LEFT</tspan><tspan x="454" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#function_and_number">
+<text x="454" y="239" class="combo tap layer-activator"><tspan style="font-size: 64%">function_a…</tspan></text>
+</a></g>
 </g>
 </g>
 </svg>
