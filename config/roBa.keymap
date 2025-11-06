@@ -115,7 +115,7 @@
         };
 
         right_func2 {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&mo 3>;
             key-positions = <41 40>;
         };
     };
@@ -167,7 +167,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT1";
             #binding-cells = <0>;
-            bindings = <&mt_balanced LEFT_SHIFT ENTER>;
+            bindings = <&lt_hold_pref 4 ENTER>;
             tapping-term-ms = <200>;
         };
 
@@ -175,7 +175,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT2";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 4 LANG1>;
+            bindings = <&mt_hold_pref LEFT_SHIFT LANG1>;
             tapping-term-ms = <200>;
         };
 
