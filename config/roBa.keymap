@@ -105,7 +105,7 @@
         };
 
         left_func1 {
-            bindings = <&mo 3>;
+            bindings = <&mo 8>;
             key-positions = <38 37>;
         };
 
