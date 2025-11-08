@@ -199,55 +199,13 @@
             flavor = "hold-preferred";
         };
 
-        td_ctrl_alt: td_ctrl_alt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_CTRL_ALT";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL>, <&kp LEFT_ALT>;
-
-            tapping-term-ms = <250>;
-        };
-
-        mt_balanced: mt_balanced {
+        mlt_hold_pref: mlt_hold_pref {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_BALANCED";
-            bindings = <&kp>, <&kp>;
+            label = "MLT_HOLD_PREF";
+            bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
-        };
-
-        lt_balanced: lt_balanced {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_BALANCED";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-        };
-
-        lt_retor_tap: lt_retor_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_RETOR_TAP";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            retro-tap;
-            flavor = "hold-preferred";
-        };
-
-        mt_retor_tap: mt_retor_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_RETOR_TAP";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-            retro-tap;
         };
     };
 
@@ -267,10 +225,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &kp LC(LEFT)  &kp LC(UP)     &kp LC(RIGHT)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB1      &mkp MB3       &mkp MB2
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &kp LG(LEFT)  &kp LG(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                         &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &kp LC(LEFT)  &kp LC(UP)            &kp LC(RIGHT)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB1      &mlt_hold_pref 2 MB3  &mkp MB2
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &kp LG(LEFT)  &kp LG(RIGHT)         &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
             >;
         };
 
