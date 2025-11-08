@@ -226,7 +226,7 @@
         mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &kp LC(LEFT)  &kp LC(UP)            &kp LC(RIGHT)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB1      &mlt_hold_pref 2 MB3  &mkp MB2
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB1      &mlt_hold_pref 2 MB2  &mlt_hold_pref 2 MB3
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &kp LG(LEFT)  &kp LG(RIGHT)         &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
             >;
