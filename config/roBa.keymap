@@ -270,7 +270,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans              &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LG(LEFT_ARROW)  &mkp MB1      &mkp MB3    &mkp MB2       &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans              &trans        &trans      &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB1                                                     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                       &trans
             >;
         };
 
@@ -334,10 +334,10 @@
 
         left_only1 {
             bindings = <
-&kp ESCAPE      &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp BACKSPACE                            &trans  &trans  &trans  &trans  &trans
-&kp TAB         &kp LEFT      &kp DOWN  &kp RIGHT      &kp ENTER      &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans        &trans    &trans         &trans         &lt 7 ESCAPE      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans    &trans         &trans         &trans            &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp BACKSPACE                            &trans  &trans  &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)
+&kp TAB         &kp LEFT      &kp DOWN  &kp RIGHT      &kp ENTER      &trans            &trans  &trans  &trans  &mkp MB1            &mkp MB3          &mkp MB2
+&kp LEFT_SHIFT  &trans        &trans    &trans         &trans         &lt 7 ESCAPE      &trans  &trans  &trans  &trans              &trans            &mo 2
+&trans          &trans        &trans    &trans         &trans         &trans            &trans  &trans                                                &trans
             >;
         };
     };
