@@ -19,6 +19,7 @@
 
 &zip_temp_layer {
     excluded-positions = < 
+        // https://zmk-physical-layout-converter.streamlit.app/
         6 7 8
         18 19 20
         22
