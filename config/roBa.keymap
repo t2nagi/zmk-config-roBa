@@ -167,7 +167,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT1";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 4 ENTER>;
+            bindings = <&lt_hold_retro 4 LANG2>, <&kp LANG1>;
+
             tapping-term-ms = <200>;
         };
 
@@ -214,6 +215,37 @@
             #binding-cells = <0>;
             bindings = <&to 0>, <&to 8>;
         };
+
+        func_right1_2: func_right1_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "FUNC_RIGHT1_2";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN>, <&kp INT_HENKAN>;
+
+            tapping-term-ms = <200>;
+        };
+
+        lt_hold_retro: lt_hold_retro {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_HOLD_RETRO";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            retro-tap;
+        };
+
+        mt_hold_retro: mt_hold_retro {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HOLD_RETRO";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            retro-tap;
+        };
     };
 
     keymap {
@@ -224,7 +256,7 @@
 &kp Q      &kp W         &kp E             &kp R                  &kp T                                                                        &kp Y                           &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D             &kp F                  &kp G                  &mkp MCLK                      &kp ESC                &kp H                           &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
 &kp Z      &kp X         &kp C             &kp V                  &kp B                  &td_layer_change               &lt_hold_pref 7 LANG1  &kp N                           &kp M  &kp COMMA  &kp DOT  &lt_hold_pref 2 MINUS
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_hold_pref 3 LANG2  &lt_hold_pref 4 SPACE  &lt_hold_pref 5 BACKSPACE      &lt_hold_pref 4 ENTER  &mt_hold_pref LEFT_SHIFT LANG1                             &lt_hold_pref 7 JP_UNDER
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_hold_pref 3 LANG2  &lt_hold_pref 4 SPACE  &lt_hold_pref 5 BACKSPACE      &func_right1           &mt_hold_pref LEFT_SHIFT LANG1                             &lt_hold_pref 7 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
@@ -261,10 +293,10 @@
 
         allow_and_option {
             bindings = <
-&kp ESC         &trans    &kp UP    &trans     &kp BACKSPACE                                  &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
-&kp TAB         &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER      &trans           &trans         &kp PG_UP         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
-&kp LEFT_SHIFT  &trans    &trans    &trans     &trans         &kp JP_ZKHK      &kp DELETE     &kp PG_DN         &kp HOME      &kp DOWN        &kp END        &kp RIGHT_SHIFT
-&trans          &trans    &trans    &trans     &trans         &trans           &kp BACKSPACE  &kp ENTER                                                      &kp DELETE
+&kp ESC         &trans    &kp UP    &trans     &kp BACKSPACE                                   &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
+&kp TAB         &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER      &trans           &trans          &kp PG_UP         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
+&kp LEFT_SHIFT  &trans    &trans    &trans     &trans         &kp JP_ZKHK      &kp DELETE      &kp PG_DN         &kp HOME      &kp DOWN        &kp END        &kp RIGHT_SHIFT
+&trans          &trans    &trans    &trans     &trans         &trans           &func_right1_2  &kp ENTER                                                      &kp DELETE
             >;
 
             sensor-bindings = <&encode_sensor_left_right>;
