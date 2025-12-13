@@ -311,7 +311,7 @@
             bindings = <
 &kp ESC         &trans    &kp UP    &trans     &kp BACKSPACE                                   &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
 &kp TAB         &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER      &trans           &trans          &kp PG_UP         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
-&kp LEFT_SHIFT  &trans    &trans    &trans     &trans         &kp JP_ZKHK      &kp DELETE      &kp PG_DN         &kp HOME      &kp DOWN        &kp END        &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &trans    &trans    &trans     &trans         &kp JP_ZKHK      &kp DELETE      &kp PG_DN         &kp HOME      &kp DOWN        &kp END        &kp DELETE
 &trans          &trans    &trans    &trans     &trans         &trans           &func_right1_2  &func_right2_2                                                 &kp DELETE
             >;
 
