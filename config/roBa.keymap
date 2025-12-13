@@ -161,7 +161,7 @@
             #binding-cells = <0>;
             bindings = <&mo 5>, <&mo 6>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         func_right1: func_right1 {
@@ -179,7 +179,7 @@
             #binding-cells = <0>;
             bindings = <&mt_hold_retro LEFT_SHIFT LANG2>, <&kp LANG1>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         lt_hold_pref: lt_hold_pref {
