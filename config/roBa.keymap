@@ -143,8 +143,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_LEFT1";
             #binding-cells = <0>;
-            bindings = <&lt_hold_retro 3 LANGUAGE_2>, <&kp LANG1>;
-
+            bindings = <&lt_hold_retro 3 LANGUAGE_2>;
             tapping-term-ms = <300>;
         };
 
@@ -178,10 +177,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT2";
             #binding-cells = <0>;
-            bindings =
-                <&mt_hold_retro LEFT_SHIFT LANG2>,
-                <&lt_hold_retro 3 LANG1>;
-
+            bindings = <&mt_hold_retro LEFT_SHIFT LANG1>;
             tapping-term-ms = <300>;
         };
 
@@ -225,8 +221,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT1_2";
             #binding-cells = <0>;
-            bindings = <&kp INT_MUHENKAN>, <&kp INT_HENKAN>;
-
+            bindings = <&kp INT_HENKAN>;
             tapping-term-ms = <200>;
         };
 
@@ -256,10 +251,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_RIGHT2_2";
             #binding-cells = <0>;
-            bindings =
-                <&mt_hold_retro LEFT_SHIFT INT_MUHENKAN>,
-                <&kp INT_HENKAN>;
-
+            bindings = <&mt_hold_retro LEFT_SHIFT INT_MUHENKAN>;
             tapping-term-ms = <300>;
         };
     };
