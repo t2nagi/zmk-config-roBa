@@ -106,39 +106,19 @@
             key-positions = <38 41>;
         };
 
-        left_func1 {
-            bindings = <&mo 8>;
-            key-positions = <38 37>;
-        };
-
-        left_func2 {
-            bindings = <&mo 6>;
-            key-positions = <39 38>;
-        };
-
-        right_func2 {
-            bindings = <&mo 3>;
-            key-positions = <41 40>;
-        };
-
-        MUHENKAN {
-            bindings = <&kp INT_MUHENKAN>;
-            key-positions = <34 39>;
-        };
-
-        HENKAN {
-            bindings = <&kp INT_HENKAN>;
-            key-positions = <34 40>;
-        };
-
-        LEFT_CMD {
-            bindings = <&kp LEFT_COMMAND>;
-            key-positions = <37 38>;
-        };
-
-        SETTINGS {
+        to_setting_layer {
             bindings = <&mo 7>;
             key-positions = <28 29>;
+        };
+
+        to_number_layer {
+            bindings = <&mo 3>;
+            key-positions = <40 41>;
+        };
+
+        kp_cmd {
+            bindings = <&kp LEFT_COMMAND>;
+            key-positions = <37 38>;
         };
     };
 
