@@ -45,6 +45,9 @@
 #define JP_QMARK LS(JP_SLASH) // ?
 #define JP_UNDER LS(INT1)     // _
 
+#define JP_KANA (INT_HENKAN & LANG1) // 変換 + カタカナ/ひらがなキー
+#define JP_EISU (INT_MUHENKAN & LANG2) // 無変換 + 英数キー
+
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -283,7 +286,7 @@
 &kp Q      &kp W         &kp E             &kp R        &kp T                                                &kp Y                 &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D             &kp F        &kp G        &mkp MCLK             &kp ESC           &kp H                 &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
 &kp Z      &kp X         &kp C             &kp V        &kp B        &td_layer_change      &trans            &kp N                 &kp M  &kp COMMA  &kp DOT  &lt_hold_pref 2 MINUS
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 3 (INT5 & LANG2)  &lt 4 SPACE  &lt 5 (INT5 & LANG2)           &lt 4 (INT5 & LANG2)  &mt LEFT_SHIFT (INT4 & LANG1)                             &lt_hold_pref 7 JP_UNDER
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 3 JP_KANA  &lt 4 SPACE  &lt 5 JP_EISU           &lt 4 JP_EISU  &mt LEFT_SHIFT JP_KANA                             &lt_hold_pref 7 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
