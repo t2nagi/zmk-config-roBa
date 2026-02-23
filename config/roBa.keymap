@@ -279,7 +279,7 @@
         lt_eisu: lt_eisu {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_EISU";
-            bindings = <&mo>, <&to_kana>;
+            bindings = <&mo>, <&to_eisu>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -294,9 +294,18 @@
             tapping-term-ms = <200>;
         };
 
-        kp_kana: kp_kana {
+        mt_eisu: mt_eisu {
             compatible = "zmk,behavior-hold-tap";
-            label = "KP_KANA";
+            label = "MT_EISU";
+            bindings = <&kp>, <&to_eisu>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        mt_kana: mt_kana {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_KANA";
             bindings = <&kp>, <&to_kana>;
 
             #binding-cells = <2>;
@@ -328,7 +337,7 @@
 &kp Q      &kp W         &kp E             &kp R         &kp T                                            &kp Y                  &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D             &kp F         &kp G        &mkp MCLK             &kp ESC       &kp H                  &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
 &kp Z      &kp X         &kp C             &kp V         &kp B        &td_layer_change      &trans        &kp N                  &kp M  &kp COMMA  &kp DOT  &lt_hold_pref 2 MINUS
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_eisu 3 0  &lt 4 SPACE  &lt_eisu 5 0          &lt_eisu 4 0  &kp_kana LEFT_SHIFT 0                             &lt_hold_pref 7 JP_UNDER
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_eisu 3 0  &lt 4 SPACE  &lt_eisu 5 0          &lt_eisu 4 0  &mt_eisu LEFT_SHIFT 0                             &lt_hold_pref 7 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
