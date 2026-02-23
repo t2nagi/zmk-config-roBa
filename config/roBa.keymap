@@ -118,6 +118,16 @@
             bindings = <&mo 3>;
             key-positions = <41 40>;
         };
+
+        MUHENKAN {
+            bindings = <&kp INT_MUHENKAN>;
+            key-positions = <34 39>;
+        };
+
+        HENKAN {
+            bindings = <&kp INT_HENKAN>;
+            key-positions = <34 40>;
+        };
     };
 
     behaviors {
@@ -143,7 +153,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_LEFT1";
             #binding-cells = <0>;
-            bindings = <&lt_hold_retro 3 LANGUAGE_2>;
+            bindings = <&lt_hold_retro 3 SPACE>;
             tapping-term-ms = <300>;
         };
 
@@ -151,7 +161,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_LEFT2";
             #binding-cells = <0>;
-            bindings = <&lt_hold_pref 4 SPACE>;
+            bindings = <&lt 4 SPACE>;
             tapping-term-ms = <200>;
         };
 
@@ -159,8 +169,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FUNC_LEFT3";
             #binding-cells = <0>;
-            bindings = <&mo 5>, <&mo 6>;
-
+            bindings = <&lt 5 LANGUAGE_1>;
             tapping-term-ms = <300>;
         };
 
@@ -261,10 +270,10 @@
 
         default {
             bindings = <
-&kp Q      &kp W         &kp E             &kp R                   &kp T                                                                &kp Y                            &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D             &kp F                   &kp G                  &mkp MCLK             &kp ESC                 &kp H                            &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
-&kp Z      &kp X         &kp C             &kp V                   &kp B                  &td_layer_change      &lt_hold_pref 7 LANG1   &kp N                            &kp M  &kp COMMA  &kp DOT  &lt_hold_pref 2 MINUS
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_hold_retro 3 LANG2  &lt_hold_pref 4 SPACE  &func_left3           &lt_hold_retro 4 LANG2  &mt_hold_retro LEFT_SHIFT LANG1                             &lt_hold_pref 7 JP_UNDER
+&kp Q      &kp W         &kp E             &kp R        &kp T                                                     &kp Y           &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D             &kp F        &kp G        &mkp MCLK             &kp ESC                &kp H           &kp J  &kp K      &kp L    &lt_hold_pref 2 SEMICOLON
+&kp Z      &kp X         &kp C             &kp V        &kp B        &td_layer_change      &lt_hold_pref 7 LANG1  &kp N           &kp M  &kp COMMA  &kp DOT  &lt_hold_pref 2 MINUS
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 3 SPACE  &lt 4 SPACE  &lt 5 LANG2           &lt 4 LANG1            &kp LEFT_SHIFT                             &lt_hold_pref 7 JP_UNDER
             >;
 
             sensor-bindings = <&encode_sensor_down_up>;
@@ -301,10 +310,10 @@
 
         allow_and_option {
             bindings = <
-&kp ESC         &trans    &kp UP    &trans                         &kp BACKSPACE                                                  &kp LC(UP_ARROW)                      &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
-&kp TAB         &kp LEFT  &kp DOWN  &kp RIGHT                      &kp ENTER      &trans           &trans                         &kp PG_UP                             &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
-&kp LEFT_SHIFT  &trans    &trans    &trans                         &trans         &kp JP_ZKHK      &kp DELETE                     &kp PG_DN                             &kp HOME      &kp DOWN        &kp END        &kp DELETE
-&trans          &trans    &trans    &lt_hold_retro 3 INT_MUHENKAN  &trans         &mo 6            &lt_hold_retro 4 INT_MUHENKAN  &mt_hold_retro LEFT_SHIFT INT_HENKAN                                               &kp DELETE
+&kp ESC         &trans    &kp UP    &trans                         &kp BACKSPACE                               &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp UP_ARROW    &kp LC(RIGHT)  &kp BACKSPACE
+&kp TAB         &kp LEFT  &kp DOWN  &kp RIGHT                      &kp ENTER      &trans           &trans      &kp PG_UP         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
+&kp LEFT_SHIFT  &trans    &trans    &trans                         &trans         &kp JP_ZKHK      &kp DELETE  &kp PG_DN         &kp HOME      &kp DOWN        &kp END        &kp DELETE
+&trans          &trans    &trans    &lt_hold_retro 3 INT_MUHENKAN  &trans         &mo 6            &kp ENTER   &kp BACKSPACE                                                  &kp DELETE
             >;
 
             sensor-bindings = <&encode_sensor_left_right>;
