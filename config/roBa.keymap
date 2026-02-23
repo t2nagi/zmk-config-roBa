@@ -394,10 +394,10 @@
 
         options_2 {
             bindings = <
-&trans  &trans  &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &trans                      &kp LANG2         &kp LANG1            &trans  &kp INT_KATAKANAHIRAGANA  &trans
-&trans  &trans  &kp LG(BACKSPACE)     &trans                &trans  &trans      &trans  &to_eisu          &to_kana             &trans  &trans                    &trans
-&trans  &trans  &trans                &trans                &trans  &trans      &trans  &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &trans  &trans                    &trans
-&trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans                                                                   &trans
+&trans  &trans  &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LG(BACKSPACE)     &trans                &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
