@@ -103,7 +103,7 @@
 
         to_default_layer {
             bindings = <&to 0>;
-            key-positions = <38 41>;
+            key-positions = <34 42>;
         };
 
         to_setting_layer {
