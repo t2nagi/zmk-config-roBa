@@ -2,7 +2,6 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-
 &default_transform {
     col-offset = <6>;
 };
@@ -19,17 +18,11 @@
 
 &zip_temp_layer {
     excluded-positions = < 
-        7
-        8
-        9
-        18
-        19
-        20
-        21
+        // https://zmk-physical-layout-converter.streamlit.app/
+        6 7 8
+        18 19 20
         22
-        31
-        32
-        33
+        30 31
     >;
 
     require-prior-idle-ms = <200>;
@@ -41,13 +34,17 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_temp_layer 1 2000>;
+        input-processors = <
+            // &zip_xy_scaler 4 5
+            &zip_temp_layer 1 1200
+        >;
 
         scroll {
             layers = <2>;
             input-processors = <
                 &zip_xy_to_scroll_mapper
-                &zip_scroll_scaler 1 10
+                &zip_scroll_scaler 1 30
+                &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
             >;
         };
     };
