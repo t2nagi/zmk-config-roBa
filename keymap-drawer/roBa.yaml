@@ -28,8 +28,8 @@ layers:
   - C
   - V
   - B
-  - {t: LANG2, h: setting}
-  - LANG1
+  - '&td_layer_change'
+  - {t: ▽, type: trans}
   - N
   - M
   - ','
@@ -38,14 +38,13 @@ layers:
   - LCTRL
   - LEFT ALT
   - LEFT COMMAND
-  - '&func_left1'
-  - '&func_left2'
-  - '&func_left3'
-  - '&func_right1'
-  - '&func_right2'
+  - {t: '&to_eisu', h: function_and_number}
+  - {t: SPACE, h: allow_and_option}
+  - {t: '&to_eisu', h: options_1}
+  - {t: '&to_eisu', h: allow_and_option}
+  - {t: '&to_kana', h: LEFT SHIFT}
   - {t: Sft+INT1, h: setting}
   mouse:
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -63,12 +62,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB1'
-  - {t: '&mkp MB2', h: mouse_scroll}
-  - {t: '&mkp MB3', h: mouse_scroll}
-  - LEFT SHIFT
   - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - '&mkp MB3'
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -78,6 +77,7 @@ layers:
   - {t: ▽, type: trans}
   - Gui+LEFT
   - Gui+RIGHT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -95,7 +95,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - Ctl+LEFT
   - Ctl+UP
   - Ctl+RIGHT
@@ -107,12 +106,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB1'
-  - {t: '&mkp MB2', h: mouse_scroll}
-  - {t: '&mkp MB3', h: mouse_scroll, type: held}
-  - LEFT SHIFT
   - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - '&mkp MB3'
+  - {type: held}
+  - LEFT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -122,6 +121,7 @@ layers:
   - {t: ▽, type: trans}
   - Gui+LEFT
   - Gui+RIGHT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -170,16 +170,16 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - RIGHT SHIFT
   allow_and_option:
   - ESC
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UP
   - {t: ▽, type: trans}
   - BACKSPACE
   - Ctl+UP ARROW
@@ -188,9 +188,9 @@ layers:
   - Ctl+RIGHT
   - BACKSPACE
   - TAB
-  - Gui+S
-  - Gui+BACKSPACE
-  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - RIGHT
   - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -201,24 +201,24 @@ layers:
   - ENTER
   - LEFT SHIFT
   - {t: ▽, type: trans}
-  - Gui+C
-  - Gui+V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
-  - {t: ▽, type: trans}
+  - DELETE
   - PG DN
   - HOME
   - DOWN
   - END
-  - RIGHT SHIFT
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: INT MUHENKAN, h: function_and_number}
+  - {type: held}
+  - options_2
+  - ENTER
+  - BACKSPACE
   - DELETE
   options_1:
   - Sft+1
@@ -260,7 +260,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -277,7 +277,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+BACKSPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -325,8 +325,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - OUT USB
   - OUT BLE
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -336,22 +336,22 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - OUT USB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   left_only1:
   - ESCAPE
   - Ctl+LEFT
@@ -380,7 +380,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ESCAPE, h: setting}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -390,18 +389,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [38, 41]
+- p: [34, 42]
   k: {t: default, h: toggle}
-- p: [38, 37]
-  k: left_only1
-- p: [39, 38]
-  k: options_2
-- p: [41, 40]
+- p: [28, 29]
+  k: setting
+- p: [40, 41]
   k: function_and_number
+- p: [37, 38]
+  k: LEFT COMMAND
