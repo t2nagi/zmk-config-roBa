@@ -374,10 +374,10 @@
 
         options_2 {
             bindings = <
-&trans  &trans  &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LG(BACKSPACE)     &trans                &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &trans                      &kt C_VOLUME_UP    &trans  &trans  &trans  &trans
+&trans  &trans  &kp LG(BACKSPACE)     &trans                &trans  &trans      &trans  &kt C_VOLUME_DOWN  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                &trans                &trans  &trans      &trans  &kt K_MUTE         &trans  &trans  &trans  &trans
+&trans  &trans  &trans                &trans                &trans  &trans      &trans  &trans                                     &trans
             >;
         };
 
